@@ -108,7 +108,7 @@ const Quiz = (questions) => {
             };
 
             // save the report
-            sendPOSTReport(report, '/api/store-report');
+            sendPOSTReport(report, '/api/report');
 
             // if it is the last question, show the score
             setShowScore(true);
