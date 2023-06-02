@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link';
+import { v4 } from "uuid";
 
 // Server-only code.
 const fs = require('fs')
@@ -36,15 +37,73 @@ const Quiz = (questions) => {
     const [score, setScore] = React.useState(0);
     const [showScore, setShowScore] = React.useState(false);
 
+    const [answers, setAnswers] = React.useState([]);
+    const [startTime, setStartTime] = React.useState(0);
+    const [endTime, setEndTime] = React.useState(0);
+    const [sessionUUID, setSessionUUID] = React.useState(0);
+
+    // set the start time when the component mounts
+    React.useEffect(() => {
+        setStartTime(Date.now());
+        setSessionUUID(v4());
+    }, []);
+
+    const sendPOSTReport = async (report, url) => {
+        const response = await fetch(url, {
+            method: 'POST',
+            headers: {
+            'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(report)
+        });
+        const data = await response.json();
+        console.log(data);
+    }
+
     // function to handle every question 
     const handleQuestion = (answer) => {
+        var correct = false;
         // check if the answer is correct
         if (answer.isCorrect) {
             setScore(score + 1);
+            correct = true;
+        } else {
+            correct = false;
         }
+
+        answers.push({
+            'uuid': questions.data.questions[currentQuestion].uuid,
+            'question': questions.data.questions[currentQuestion].question,
+            'userAnswer': answer.answer,
+            'correctAnswer': questions.data.questions[currentQuestion].options.filter((option) => option.isCorrect)[0].answer,
+            'correct': correct,
+        });
 
         // check if the current question is the last question
         if (currentQuestion + 1 === questions.data.questions.length) {
+            // set the end time
+            setEndTime(Date.now());
+
+            // generate report data
+            const report = {
+                'attempt': sessionUUID,
+                'quiz': {
+                    'uuid': questions.data.metadata.uuid,
+                    'title': questions.data.metadata.title,
+                },
+                'score': {
+                    'correct': score,
+                    'incorrect': questions.data.questions.length - score,
+                },
+                'totalQuestions': questions.data.questions.length,
+                'startTime': startTime,
+                'endTime': endTime,
+                'data': answers,
+            };
+
+            // save the report
+            sendPOSTReport(report, '/api/store-report');
+
             // if it is the last question, show the score
             setShowScore(true);
             return;
