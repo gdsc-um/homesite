@@ -1,34 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# GDSC Universitas Negeri Malang Homesite
 
-## Getting Started
+## Tentang
 
-First, run the development server:
+GDSC Universitas Negeri Malang Homesite adalah sebuah website yang dibuat untuk memenuhi tugas akhir dari kegiatan GDSC Universitas Negeri Malang. Website ini dibuat dengan menggunakan framework Next.js dan Tailwind CSS. Website ini dibuat dengan tujuan untuk memperkenalkan GDSC Universitas Negeri Malang kepada masyarakat umum. Selain sebagai media untuk memperkenalkan GDSC Universitas Negeri Malang, website ini juga dapat digunakan sebagai media untuk mengakses informasi terkait GDSC Universitas Negeri Malang.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## How to run
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Pre-requisite
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- Node.js versi 18 (LTS saat ini)
+- NPM versi 7 (LTS saat ini)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Cara menjalankan
 
-## Learn More
+1. Clone repositori ini dengan perintah `git clone https://github.com/GDSC-UM-Indonesia/nextjs_finalproject.git`
+2. Install dependencies dengan perintah `npm install`
+3. Rename file `.env.example` menjadi `.env`
+4. Ambil informasi `.env` dari admin atau tim technical website GDSC Universitas Negeri Malang
+5. Jalankan aplikasi dengan perintah `npm run dev`
 
-To learn more about Next.js, take a look at the following resources:
+## Lisensi
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Dokumentasi aplikasi ini di folder `asset`, `public`, `post`, `quizzes` dan `data` dilisensikan di bawah lisensi CC-BY-SA 4.0.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Semua kode lain di repositori ini dilisensikan di bawah lisensi MIT.
