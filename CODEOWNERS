@@ -3,27 +3,27 @@
 # https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-code-owners#codeowners-syntax
 
 # Github Repository Settings
-/.github/ vzrenggamani
-README.md vzrenggamani
-CODEOWNERS vzrenggamani
-LICENSE vzrenggamani
-CONTRIBUTING.md vzrenggamani
-PULL_REQUEST_TEMPLATE.md vzrenggamani
-ISSUE_TEMPLATE/ vzrenggamani
+/.github/ @vzrenggamani
+README.md @vzrenggamani
+CODEOWNERS @vzrenggamani
+LICENSE @vzrenggamani
+CONTRIBUTING.md @vzrenggamani
+PULL_REQUEST_TEMPLATE.md @vzrenggamani
+ISSUE_TEMPLATE/ @vzrenggamani
 
 # Next.js specific
-/next.config.js vzrenggamani
-/package.json vzrenggamani
-/package-lock.json vzrenggamani
-/tailwind.config.js vzrenggamani
-/postcss.config.js vzrenggamani
+/next.config.js @vzrenggamani
+/package.json @vzrenggamani
+/package-lock.json @vzrenggamani
+/tailwind.config.js @vzrenggamani
+/postcss.config.js @vzrenggamani
 
 # Development specific
-/.eslintrc.json vzrenggamani
-/.prettierrc vzrenggamani
-/.gitignore vzrenggamani
-/.gitattributes vzrenggamani
-/.env.local vzrenggamani
-/.env.production vzrenggamani
-/.env.example vzrenggamani
-/jsconfig.json vzrenggamani
+/.eslintrc.json @vzrenggamani
+/.prettierrc @vzrenggamani
+/.gitignore @vzrenggamani
+/.gitattributes @vzrenggamani
+/.env.local @vzrenggamani
+/.env.production @vzrenggamani
+/.env.example @vzrenggamani
+/jsconfig.json @vzrenggamani
