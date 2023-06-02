@@ -1,0 +1,40 @@
+[
+    {
+        "question": "What is the capital of India?",
+        "image": "",
+        "options": [
+            {
+                "answer": "Delhi",
+                "isCorrect": true
+            },
+            {
+                "answer": "Mumbai"
+            },
+            {
+                "answer": "Kolkata"
+            },
+            {
+                "answer": "Chennai"
+            }
+        ]
+    },
+    {
+        "question": "Firebase is a product of which company?",
+        "image": "",
+        "options": [
+            {
+                "answer": "Google",
+                "isCorrect": true
+            },
+            {
+                "answer": "Facebook"
+            },
+            {
+                "answer": "Microsoft"
+            },
+            {
+                "answer": "Apple"
+            }
+        ]
+    }
+]
