@@ -25,23 +25,34 @@ export default async function handler(req, res) {
             
             // Get the data from the request body
             const data = req.body;
-
-            var reports = [];
+            var report_details = [];
             var questions = data.data;
 
             for (var i = 0; i < questions.length; i++) {
                 var question = questions[i];
-                var report = [question.timestamp, data.quiz.uuid, data.quiz.title, question.uuid, question.question, question.userAnswer, question.correctAnswer, question.correct == true ? "Correct" : "Incorrect"];
-                reports.push(report);
+                var report = [question.timestamp, data.attempt, data.quiz.uuid, data.quiz.title, question.uuid, question.question, question.userAnswer, question.correctAnswer, question.correct == true ? "Correct" : "Incorrect"];
+                report_details.push(report);
             }
 
-            const response = await sheets.spreadsheets.values.append({
+            var report_attempt = [data.attempt, data.quiz.uuid, data.quiz.title, data.score.correct, data.score.incorrect, data.totalQuestions, data.startTime, data.endTime, data.duration];
+
+            await sheets.spreadsheets.values.append({
                 spreadsheetId: process.env.SPREADSHEET_ID,
-                range: 'Analysis!A2:H',
+                range: 'Analysis!A2:I',
                 valueInputOption: 'USER_ENTERED',
                 insertDataOption: 'INSERT_ROWS',
                 requestBody: {
-                    values: reports
+                    values: report_details
+                },
+            });
+
+            await sheets.spreadsheets.values.append({
+                spreadsheetId: process.env.SPREADSHEET_ID,
+                range: 'Attempts!A3:I',
+                valueInputOption: 'USER_ENTERED',
+                insertDataOption: 'INSERT_ROWS',
+                requestBody: {
+                    values: [report_attempt]
                 },
             });
             // Send a success response

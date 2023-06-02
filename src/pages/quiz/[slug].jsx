@@ -42,9 +42,11 @@ const Quiz = (questions) => {
     const [endTime, setEndTime] = React.useState(0);
     const [sessionUUID, setSessionUUID] = React.useState(0);
 
-    // set the start time when the component mounts
+    // set start time for the first time
     React.useEffect(() => {
-        setStartTime(Date.now());
+        if (startTime === 0) {
+            setStartTime(new Date(Date.now()));
+        }
         setSessionUUID(v4());
     }, []);
 
@@ -63,6 +65,10 @@ const Quiz = (questions) => {
     // function to handle every question 
     const handleQuestion = (answer) => {
         var correct = false;
+        // set the end time
+        setEndTime(new Date(Date.now()));
+
+        
         // check if the answer is correct
         if (answer.isCorrect) {
             setScore(score + 1);
@@ -71,20 +77,18 @@ const Quiz = (questions) => {
             correct = false;
         }
 
+        var currentDate = new Date(Date.now());
         answers.push({
             'uuid': questions.data.questions[currentQuestion].uuid,
             'question': questions.data.questions[currentQuestion].question,
             'userAnswer': answer.answer,
             'correctAnswer': questions.data.questions[currentQuestion].options.filter((option) => option.isCorrect)[0].answer,
             'correct': correct,
-            'timestamp': Date.now(),
+            'timestamp': `${currentDate.toLocaleDateString()} ${currentDate.toLocaleTimeString()}`,
         });
 
         // check if the current question is the last question
         if (currentQuestion + 1 === questions.data.questions.length) {
-            // set the end time
-            setEndTime(Date.now());
-
             // generate report data
             const report = {
                 'attempt': sessionUUID,
@@ -97,8 +101,9 @@ const Quiz = (questions) => {
                     'incorrect': questions.data.questions.length - score,
                 },
                 'totalQuestions': questions.data.questions.length,
-                'startTime': startTime,
-                'endTime': endTime,
+                'startTime': `${startTime.toLocaleDateString()} ${startTime.toLocaleTimeString()}`,
+                'endTime': `${endTime.toLocaleDateString()} ${endTime.toLocaleTimeString()}`,
+                'duration': Math.floor((endTime - startTime) / 1000 / 60),
                 'data': answers,
             };
 
