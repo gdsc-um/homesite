@@ -77,6 +77,7 @@ const Quiz = (questions) => {
             'userAnswer': answer.answer,
             'correctAnswer': questions.data.questions[currentQuestion].options.filter((option) => option.isCorrect)[0].answer,
             'correct': correct,
+            'timestamp': Date.now(),
         });
 
         // check if the current question is the last question
