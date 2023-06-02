@@ -73,7 +73,7 @@ const Quiz = (questions) => {
                                     Question {currentQuestion + 1}
                                 </h3>
                             </div>
-                            <Link href='/quizzes'>
+                            <Link href='/quiz'>
                                 <div className='absolute top-5 right-5 px-5 py-3 bg-neutral-100 rounded shadow active:scale-90 duration-200 lg:hover:scale-105 lg:hover:shadow-md'>
                                     <h3 className='text-[#262626] text-[1vw] font-semibold'>
                                         Back to Quizzes
