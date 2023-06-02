@@ -1,40 +1,48 @@
-[
-    {
-        "question": "What is the capital of India?",
-        "image": "",
-        "options": [
-            {
-                "answer": "Delhi",
-                "isCorrect": true
-            },
-            {
-                "answer": "Mumbai"
-            },
-            {
-                "answer": "Kolkata"
-            },
-            {
-                "answer": "Chennai"
-            }
-        ]
+{
+    "metadata": {
+        "title": "Firebase",
+        "author": "Fahli Saputra",
+        "description": "short description",
+        "thumbnail": "https://fahli.net/wp-content/uploads/2020/07/Instalasi-Debian-9-dan-Konfigurasi-IP.jpg"
     },
-    {
-        "question": "Firebase is a product of which company?",
-        "image": "",
-        "options": [
-            {
-                "answer": "Google",
-                "isCorrect": true
-            },
-            {
-                "answer": "Facebook"
-            },
-            {
-                "answer": "Microsoft"
-            },
-            {
-                "answer": "Apple"
-            }
-        ]
-    }
-]
+    "questions": [
+        {
+            "question": "What is the capital of India?",
+            "image": "",
+            "options": [
+                {
+                    "answer": "Delhi",
+                    "isCorrect": true
+                },
+                {
+                    "answer": "Mumbai"
+                },
+                {
+                    "answer": "Kolkata"
+                },
+                {
+                    "answer": "Chennai"
+                }
+            ]
+        },
+        {
+            "question": "Firebase is a product of which company?",
+            "image": "",
+            "options": [
+                {
+                    "answer": "Google",
+                    "isCorrect": true
+                },
+                {
+                    "answer": "Facebook"
+                },
+                {
+                    "answer": "Microsoft"
+                },
+                {
+                    "answer": "Apple"
+                }
+            ]
+        }
+    ]
+}

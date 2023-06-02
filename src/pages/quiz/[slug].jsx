@@ -44,7 +44,7 @@ const Quiz = (questions) => {
         }
 
         // check if the current question is the last question
-        if (currentQuestion + 1 === questions.data.length) {
+        if (currentQuestion + 1 === questions.data.questions.length) {
             // if it is the last question, show the score
             setShowScore(true);
             return;
@@ -52,7 +52,7 @@ const Quiz = (questions) => {
 
         // set the next question
         const nextQues = currentQuestion + 1;
-        nextQues < questions.data.length && setCurrentQuestion(nextQues);
+        nextQues < questions.data.questions.length && setCurrentQuestion(nextQues);
     };
 
     // return the quiz page
@@ -62,7 +62,7 @@ const Quiz = (questions) => {
                 showScore ? (
                     <div className='flex justify-center items-center w-full min-h-screen'>
                         <h1 className="text-3xl font-semibold text-center text-[#262626]">
-                            You scored {score} out of {questions.data.length}
+                            You scored {score} out of {questions.data.questions.length}
                         </h1>
                     </div>
                 ) : (
@@ -81,37 +81,37 @@ const Quiz = (questions) => {
                                 </div>
                             </Link>
                             <h2 className='text-start text-[1.6vw] text-[#262626] whitespace-pre-line'>
-                                {questions.data[currentQuestion].question}
+                                {questions.data.questions[currentQuestion].question}
                             </h2>
                         </div>
                         <div className='w-full h-[60vh] flex justify-center items-center'>
                             <div className=" grid grid-cols-2 gap-8 gap-x-12">
                                 <button onClick={
-                                    () => handleQuestion(questions.data[currentQuestion].options[0])
+                                    () => handleQuestion(questions.data.questions[currentQuestion].options[0])
                                 }>
                                     <div className="w-[35vw] h-[15vh] rounded-md flex justify-center items-center text-[#262626] text-[1.7vw] font-semibold bg-white hover:cursor-pointer lg:hover:shadow-lg shadow lg:hover:scale-105 lg:hover:-translate-y-2 duration-200 active:scale-90">
-                                        {questions.data[currentQuestion].options[0].answer}
+                                        {questions.data.questions[currentQuestion].options[0].answer}
                                     </div>
                                 </button>
                                 <button onClick={
-                                    () => handleQuestion(questions.data[currentQuestion].options[1])
+                                    () => handleQuestion(questions.data.questions[currentQuestion].options[1])
                                 }>
                                     <div className="w-[35vw] h-[15vh] rounded-md flex justify-center items-center text-[#262626] text-[1.7vw] font-semibold bg-white hover:cursor-pointer lg:hover:shadow-lg shadow lg:hover:scale-105 lg:hover:-translate-y-2 duration-200 active:scale-90">
-                                        {questions.data[currentQuestion].options[1].answer}
+                                        {questions.data.questions[currentQuestion].options[1].answer}
                                     </div>
                                 </button>
                                 <button onClick={
-                                    () => handleQuestion(questions.data[currentQuestion].options[2])
+                                    () => handleQuestion(questions.data.questions[currentQuestion].options[2])
                                 }>
                                     <div className="w-[35vw] h-[15vh] rounded-md flex justify-center items-center text-[#262626] text-[1.7vw] font-semibold bg-white hover:cursor-pointer lg:hover:shadow-lg shadow lg:hover:scale-105 lg:hover:-translate-y-2 duration-200 active:scale-90">
-                                        {questions.data[currentQuestion].options[2].answer}
+                                        {questions.data.questions[currentQuestion].options[2].answer}
                                     </div>
                                 </button>
                                 <button onClick={
-                                    () => handleQuestion(questions.data[currentQuestion].options[3])
+                                    () => handleQuestion(questions.data.questions[currentQuestion].options[3])
                                 }>
                                     <div className="w-[35vw] h-[15vh] rounded-md flex justify-center items-center text-[#262626] text-[1.7vw] font-semibold bg-white hover:cursor-pointer lg:hover:shadow-lg shadow lg:hover:scale-105 lg:hover:-translate-y-2 duration-200 active:scale-90">
-                                        {questions.data[currentQuestion].options[3].answer}
+                                        {questions.data.questions[currentQuestion].options[3].answer}
                                     </div>
                                 </button>
                             </div>
