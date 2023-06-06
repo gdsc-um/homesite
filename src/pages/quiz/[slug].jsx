@@ -131,7 +131,7 @@ const Quiz = (questions) => {
         </div>
       ) : (
         <>
-          <div className="w-full h-[40vh] px-10 bg-white flex justify-center items-center relative">
+          <div className="w-full h-[40vh] px-10 bg-white flex justify-center items-center relative flex-col">
             <div className="absolute top-5 left-5 px-5 py-3 bg-neutral-100 rounded shadow-md">
               <h3 className="text-[#262626] text-[1vw] font-semibold">
                 Question {currentQuestion + 1}
@@ -147,6 +147,18 @@ const Quiz = (questions) => {
             <h2 className="text-start text-[1.6vw] text-[#262626] whitespace-pre-line">
               {questions.data.questions[currentQuestion].question}
             </h2>
+            {/* image container */}
+            <div className="">
+              {questions.data.questions[currentQuestion].image && ( 
+                // if there is an image in the question show
+                <div className="max-w-[50vh]">
+                  <img
+                    src={questions.data.questions[currentQuestion].image}
+                    alt="question image"
+                    />
+                </div>
+              )}
+            </div>
           </div>
           <div className="w-full h-[90vh] flex justify-center items-center">
             <div className=" grid grid-cols-2 gap-8 gap-x-12">
