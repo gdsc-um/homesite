@@ -10,7 +10,7 @@
         {
           "uuid": "b987a3b2-eed9-4c5a-82da-424e4a2789ce",
           "question": "What is the capital of India?",
-          "image": "",
+          "image": "https://t-2.tstatic.net/medan/foto/bank/images/Contoh-gambar.jpg",
           "options": [
             {
               "answer": "Delhi",
@@ -30,7 +30,7 @@
         {
             "uuid": "477cdae9-fb70-40dc-85e7-970bc309dc86",
             "question": "Firebase is a product of which company?",
-            "image": "",
+            "image": "https://scontent.fsub22-1.fna.fbcdn.net/v/t39.30808-6/348935781_751359779804050_2895044665372666260_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5cd70e&_nc_eui2=AeFk338zd8K5VMaxDbPSDYlSc-HSO9wAVqZz4dI73ABWpkUg5D-s_fZvBKwSu8g-VRyi_fKw2YPRYmCw9cBzgX5I&_nc_ohc=j9WfypsVuRwAX_rlSTT&_nc_ht=scontent.fsub22-1.fna&oh=00_AfBInszY1xxZMjaBNlSYWjSLrylpasK-nuPFL-kqmjCB4g&oe=64835C25",
             "options": [
                 {
                     "answer": "Google",
