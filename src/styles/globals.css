@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  outline: 1px solid red;
-  background-color: rgba(100, 0, 0, 0.1);
+body {
+  outline: 0px solid red;
+  background-color: #021A28;
 }
