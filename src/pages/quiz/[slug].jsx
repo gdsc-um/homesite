@@ -160,7 +160,7 @@ const Quiz = (questions) => {
               )}
             </div>
           </div>
-          <div className="w-full h-[60vh] flex justify-center items-center">
+          <div className="w-full h-[90vh] flex justify-center items-center">
             <div className=" grid grid-cols-2 gap-8 gap-x-12">
               <button
                 onClick={() =>
@@ -168,7 +168,21 @@ const Quiz = (questions) => {
                     questions.data.questions[currentQuestion].options[0],
                   )
                 }
+                className="flex flex-col items-center"
+                style={{ alignSelf: "flex-end" }}
               >
+                <div className="max-w-[30vh]">
+                  {questions.data.questions[currentQuestion].options[0]
+                    .image ? (
+                    <img
+                      src={
+                        questions.data.questions[currentQuestion].options[0]
+                          .image
+                      }
+                      alt="answer-0 image"
+                    />
+                  ) : null}
+                </div>
                 <div className="w-[35vw] h-[15vh] rounded-md flex justify-center items-center text-[#262626] text-[1.7vw] font-semibold bg-white hover:cursor-pointer lg:hover:shadow-lg shadow lg:hover:scale-105 lg:hover:-translate-y-2 duration-200 active:scale-90">
                   {questions.data.questions[currentQuestion].options[0].answer}
                 </div>
@@ -179,7 +193,20 @@ const Quiz = (questions) => {
                     questions.data.questions[currentQuestion].options[1],
                   )
                 }
+                className="flex flex-col items-center"
+                style={{ alignSelf: "flex-end" }}
               >
+                {questions.data.questions[currentQuestion].options[1].image ? (
+                  <div className="max-w-[30vh]">
+                    <img
+                      src={
+                        questions.data.questions[currentQuestion].options[1]
+                          .image
+                      }
+                      alt="answer-1 image"
+                    />
+                  </div>
+                ) : null}
                 <div className="w-[35vw] h-[15vh] rounded-md flex justify-center items-center text-[#262626] text-[1.7vw] font-semibold bg-white hover:cursor-pointer lg:hover:shadow-lg shadow lg:hover:scale-105 lg:hover:-translate-y-2 duration-200 active:scale-90">
                   {questions.data.questions[currentQuestion].options[1].answer}
                 </div>
@@ -190,7 +217,21 @@ const Quiz = (questions) => {
                     questions.data.questions[currentQuestion].options[2],
                   )
                 }
+                className="flex flex-col items-center"
+                style={{ alignSelf: "flex-end" }}
               >
+                <div className="max-w-[30vh]">
+                  {questions.data.questions[currentQuestion].options[2]
+                    .image ? (
+                    <img
+                      src={
+                        questions.data.questions[currentQuestion].options[2]
+                          .image
+                      }
+                      alt="answer_2 image"
+                    />
+                  ) : null}
+                </div>
                 <div className="w-[35vw] h-[15vh] rounded-md flex justify-center items-center text-[#262626] text-[1.7vw] font-semibold bg-white hover:cursor-pointer lg:hover:shadow-lg shadow lg:hover:scale-105 lg:hover:-translate-y-2 duration-200 active:scale-90">
                   {questions.data.questions[currentQuestion].options[2].answer}
                 </div>
@@ -201,7 +242,21 @@ const Quiz = (questions) => {
                     questions.data.questions[currentQuestion].options[3],
                   )
                 }
+                className="flex flex-col items-center"
+                style={{ alignSelf: "flex-end" }}
               >
+                <div className="max-w-[30vh]">
+                  {questions.data.questions[currentQuestion].options[3]
+                    .image ? (
+                    <img
+                      src={
+                        questions.data.questions[currentQuestion].options[3]
+                          .image
+                      }
+                      alt="answer_3 image"
+                    />
+                  ) : null}
+                </div>
                 <div className="w-[35vw] h-[15vh] rounded-md flex justify-center items-center text-[#262626] text-[1.7vw] font-semibold bg-white hover:cursor-pointer lg:hover:shadow-lg shadow lg:hover:scale-105 lg:hover:-translate-y-2 duration-200 active:scale-90">
                   {questions.data.questions[currentQuestion].options[3].answer}
                 </div>
