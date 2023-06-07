@@ -3,6 +3,25 @@ import LogoGDSC from "@/assets/logo_gdsc.svg";
 import Image from "next/image";
 import Link from "next/link";
 
+const FooterLinks = [
+  {
+    title: "Home",
+    link: "/",
+  },
+  {
+    title: "Blog",
+    link: "/blog",
+  },
+  {
+    title: "Quiz",
+    link: "/quiz",
+  },
+  {
+    title: "Profile",
+    link: "/profile",
+  },
+];
+
 const Footer = () => {
   return (
     <footer className="text-white body-font bg-[#010C1B]">
@@ -25,62 +44,20 @@ const Footer = () => {
           </Link>
         </div>
         <div className="flex-grow lg:flex-grow-0 flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center lg:gap-8">
-          <div className="lg:w-1/4 md:w-1/2 w-full px-4">
+          <div className="w-full px-4">
             <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">
-              CATEGORIES
+              SITE MAP
             </h2>
-            <nav className="list-none mb-10">
-              <li>
-                <a className="text-white hover:text-white">First Link</a>
-              </li>
-              <li>
-                <a className="text-white hover:text-white">Second Link</a>
-              </li>
-              <li>
-                <a className="text-white hover:text-white">Third Link</a>
-              </li>
-              <li>
-                <a className="text-white hover:text-white">Fourth Link</a>
-              </li>
-            </nav>
-          </div>
-
-          <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-            <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">
-              CATEGORIES
-            </h2>
-            <nav className="list-none mb-10">
-              <li>
-                <a className="text-white hover:text-white">First Link</a>
-              </li>
-              <li>
-                <a className="text-white hover:text-white">Second Link</a>
-              </li>
-              <li>
-                <a className="text-white hover:text-white">Third Link</a>
-              </li>
-              <li>
-                <a className="text-white hover:text-white">Fourth Link</a>
-              </li>
-            </nav>
-          </div>
-          <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-            <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">
-              CATEGORIES
-            </h2>
-            <nav className="list-none mb-10">
-              <li>
-                <a className="text-white hover:text-white">First Link</a>
-              </li>
-              <li>
-                <a className="text-white hover:text-white">Second Link</a>
-              </li>
-              <li>
-                <a className="text-white hover:text-white">Third Link</a>
-              </li>
-              <li>
-                <a className="text-white hover:text-white">Fourth Link</a>
-              </li>
+            <nav className="flex mb-10 gap-5">
+              {FooterLinks.map((link) => (
+                <Link
+                  key={link.link}
+                  href={link.link}
+                  className="text-white hover:text-white"
+                >
+                  {link.title}
+                </Link>
+              ))}
             </nav>
           </div>
         </div>
