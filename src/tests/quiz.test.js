@@ -69,16 +69,20 @@ test('quizzes format is valid', () => {
 
                 const isCorrectAnswer = options.isCorrect;
                 if (isCorrectAnswer) {
-                    isCorrect = true;
+                    if (!isCorrect) {
+                        isCorrect = true;
+                    } else {
+                        throw new Error(`Question should have only 1 correct answer in ${slug}`);
+                    }
                 }
             });
 
-            if (countAnswer < 4) {
+            if (countAnswer != 4) {
                 throw new Error(`Question should have 4 options in ${slug}`);
             }
 
             if (!isCorrect) {
-                throw new Error(`Question should have 1 correct answer in ${slug}`);
+                throw new Error(`Question should have minimum 1 correct answer in ${slug}`);
             }
         });
     });
