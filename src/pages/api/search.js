@@ -34,7 +34,8 @@ export default async function handler(req, res) {
                         const data = {
                             slug: slug,
                             title: title,
-                            description: description
+                            description: description,
+                            type: "quiz"
                         }
                         search_data.push(data);
                     }
@@ -56,7 +57,8 @@ export default async function handler(req, res) {
                         const data = {
                             slug: slug,
                             title: title,
-                            description: excerpt
+                            description: excerpt,
+                            type: "blog"
                         }
                         search_data.push(data);
                     }
