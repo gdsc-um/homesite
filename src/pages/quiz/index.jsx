@@ -31,7 +31,7 @@ export default function Quiz({ quizzes }) {
         <h1 className="text-xl font-bold text-white">Quiz & Latihan</h1>
         <div className="w-full mx-auto container flex flex-wrap">
           {quizzes.map(({ slug, metadata }) => (
-            <ArticleCard slug={slug} frontmatter={metadata} key={slug} />
+            <ArticleCard slug={`/quiz/${slug}`} frontmatter={metadata} key={slug} />
           ))}
         </div>
       </div>

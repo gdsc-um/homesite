@@ -31,7 +31,7 @@ export default function Blog({ posts }) {
         <h1 className="text-xl font-bold text-white">Postingan Terbaru</h1>
         <div className="w-full mx-auto container flex flex-wrap">
           {posts.map(({ slug, frontmatter }) => (
-            <ArticleCard slug={slug} frontmatter={frontmatter} key={slug} />
+            <ArticleCard slug={`/blog/${slug}`} frontmatter={frontmatter} key={slug} />
           ))}
         </div>
       </div>

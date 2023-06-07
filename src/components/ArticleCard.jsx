@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function ArticleCard({ slug, frontmatter }) {
   return (
-    <Link href={`/blog/${slug}`} className="lg:w-1/3 sm:w-1/2 w-full p-3">
+    <Link href={`${slug}`} className="lg:w-1/3 sm:w-1/2 w-full p-3">
       <div className="relative h-full rounded-lg border-2 border-gray-300 flex flex-col gap-3 overflow-hidden p-5 text-white">
         <div className="w-full h-60 bg-[#D9D9D9] rounded"></div>
         <h2 className="text-[1.5vw] font-semibold">{frontmatter.title}</h2>
