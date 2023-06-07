@@ -9,13 +9,17 @@ jobs:
       - name: Checkout code
       - uses: actions/checkout@v2
       
-      - name: Setup Node and Install Packages
-      - uses: actions/setup-node@v1
+      - name: Setup Node
+        uses: actions/setup-node@v1
         with:
           node-version: 18
-      - run: npm ci
-      - run: npm run build
+          
+      - name: Run CI
+        run: npm ci
+      
+      - name: Run Build
+        run: npm run build --if-present
       
       - name: Run Test
-      - run: npm test
+        run: npm test
       
