@@ -1,0 +1,21 @@
+name: Test
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+      - uses: actions/checkout@v2
+      
+      - name: Setup Node and Install Packages
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 18
+      - run: npm ci
+      - run: npm run build
+      
+      - name: Run Test
+      - run: npm test
+      
