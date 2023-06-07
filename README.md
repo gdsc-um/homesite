@@ -1,4 +1,5 @@
 # GDSC Universitas Negeri Malang Homesite
+[![Test](https://github.com/GDSC-UM-Indonesia/nextjs_finalproject/actions/workflows/tests.yml/badge.svg)](https://github.com/GDSC-UM-Indonesia/nextjs_finalproject/actions/workflows/tests.yml)
 
 ## Tentang
 
