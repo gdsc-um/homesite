@@ -38,6 +38,19 @@ export default async function handler(req, res) {
                             type: "quiz"
                         }
                         search_data.push(data);
+                    } else {
+                        if (metadata.description.toLowerCase().includes(search.toLowerCase())) {
+                            const title = metadata.title;
+                            const description = metadata.description;
+
+                            const data = {
+                                slug: slug,
+                                title: title,
+                                description: description,
+                                type: "quiz"
+                            }
+                            search_data.push(data);
+                        }
                     }
                 });
             }
@@ -61,6 +74,19 @@ export default async function handler(req, res) {
                             type: "blog"
                         }
                         search_data.push(data);
+                    } else {
+                        if (frontmatter.excerpt.toLowerCase().includes(search.toLowerCase())) {
+                            const title = frontmatter.title;
+                            const excerpt = frontmatter.excerpt;
+
+                            const data = {
+                                slug: slug,
+                                title: title,
+                                description: excerpt,
+                                type: "blog"
+                            }
+                            search_data.push(data);
+                        }
                     }
                 });
             }
