@@ -42,7 +42,7 @@ test('blog markdown format is valid', () => {
         const image = frontmatter.image;
         if (!(image === undefined || image === null || image === "")) {
             // check if format is jpg
-            if (!hero.includes(".jpg")) {
+            if (!image.includes(".jpg")) {
                 throw new Error(`Hero image format should be jpg. Error at ${fileName}`);
             }
         }
