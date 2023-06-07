@@ -1,5 +1,6 @@
+import ArticleCard from "@/components/ArticleCard";
+import HeroBlog from "@/components/HeroBlog";
 import fs from "fs";
-import Link from "next/link";
 
 export async function getStaticProps() {
   const files = fs.readdirSync("quizzes");
@@ -23,16 +24,16 @@ export async function getStaticProps() {
 
 export default function Quiz({ quizzes }) {
   return (
-    <div className="w-full min-h-screen mx-auto container flex justify-center items-center">
-      <h1 className="text-xl font-bold">Quiz nih bos!</h1>
-      <div className="w-full min-h-screen mx-auto container flex justify-center items-center flex-col">
-        {quizzes.map(({ slug, metadata }) => (
-          <Link href={`/quiz/${slug}`} key={slug}>
-            <h2 className="text-center text-[#262626] text-[1.5vw] font-semibold">
-              {metadata.title}
-            </h2>
-          </Link>
-        ))}
+
+    <div className="w-full min-h-screen">
+      <HeroBlog />
+      <div className="mx-auto container py-32 flex flex-col gap-8 justify-center items-center">
+        <h1 className="text-xl font-bold text-white">Quiz & Latihan</h1>
+        <div className="w-full mx-auto container flex flex-wrap">
+          {quizzes.map(({ slug, metadata }) => (
+            <ArticleCard slug={`/quiz/${slug}`} frontmatter={metadata} key={slug} />
+          ))}
+        </div>
       </div>
     </div>
   );

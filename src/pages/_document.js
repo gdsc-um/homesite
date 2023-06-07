@@ -6,7 +6,7 @@ export default function Document() {
   return (
     <Html lang="id">
       <Head />
-      <body>
+      <body className="bg-primarydark">
         <Navbar />
         <Main />
         <NextScript />

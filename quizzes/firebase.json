@@ -4,7 +4,9 @@
     "title": "Firebase",
     "author": "Fahli Saputra",
     "description": "short description",
-    "thumbnail": "https://fahli.net/wp-content/uploads/2020/07/Instalasi-Debian-9-dan-Konfigurasi-IP.jpg"
+    "thumbnail": "https://fahli.net/wp-content/uploads/2020/07/Instalasi-Debian-9-dan-Konfigurasi-IP.jpg",
+    "date": "2021-09-30",
+    "tags": ["firebase", "flutter"]
   },
   "questions": [
     {
