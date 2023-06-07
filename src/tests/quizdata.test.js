@@ -3,7 +3,7 @@ import fs from "fs";
 
 test('quizzes format is valid', () => {
     const files = fs.readdirSync("quizzes");
-    const quizzes = files.map((fileName) => {
+    files.map((fileName) => {
         const slug = fileName;
         const readFile = fs.readFileSync(`quizzes/${fileName}`, "utf-8");
         const json = JSON.parse(readFile);
@@ -20,40 +20,49 @@ test('quizzes format is valid', () => {
         }
 
         const title = metadata.title;
-        if (title === undefined) {
+        if (title === undefined || title === null || title === "") {
             throw new Error(`Title is undefined in ${slug}`);
         }
 
         const description = metadata.description;
-        if (description === undefined) {
+        if (description === undefined || description === null || description === "") {
             throw new Error(`Description is undefined in ${slug}`);
         }
 
         const thumbnail = metadata.thumbnail;
-        if (thumbnail === undefined) {
+        if (thumbnail === undefined || thumbnail === null || thumbnail === "") {
             throw new Error(`Thumbnail is undefined in ${slug}`);
         }
 
         const author = metadata.author;
-        if (author === undefined) {
+        if (author === undefined || author === null || author === "") {
             throw new Error(`Author is undefined in ${slug}`);
         }
 
         const uuid = metadata.uuid;
-        if (uuid === undefined) {
+        if (uuid === undefined || uuid === null || uuid === "") {
             throw new Error(`UUID is undefined on file ${slug}`);
         }
 
-        
+        const date = metadata.date;
+        if (date === undefined || date === null || date === "") {
+            throw new Error(`Date is undefined in ${slug}`);
+        }
+
+        const tags = metadata.tags;
+        if (tags === undefined || tags === null || tags === "") {
+            throw new Error(`Tags is undefined in ${slug}`);
+        }
+
         json.questions.map((question) => {
             const questionText = question.question;
             const uuid = question.uuid;
 
-            if (uuid === undefined) {
+            if (uuid === undefined || uuid === null || uuid === "") {
                 throw new Error(`UUID is undefined single question in ${slug}`);
             }
 
-            if (questionText === undefined) {
+            if (questionText === undefined || questionText === null || questionText === "") {
                 throw new Error(`Question text is undefined in ${slug}`);
             }
 
@@ -62,7 +71,7 @@ test('quizzes format is valid', () => {
 
             question.options.map((options) => {
                 const optionText = options.answer;
-                if (optionText === undefined) {
+                if (optionText === undefined || optionText === null || optionText === "") {
                     throw new Error(`Option text is undefined in ${slug}`);
                 }
                 countAnswer += 1;
