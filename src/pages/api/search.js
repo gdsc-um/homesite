@@ -1,5 +1,6 @@
 import fs from "fs";
 import matter from "gray-matter";
+import path from "path";
 
 export default async function handler(req, res) {
     if (req.method === "GET") {
@@ -21,7 +22,8 @@ export default async function handler(req, res) {
             var search_data = [];
 
             if (type == "quiz" || type == "all" || type == "" || type === undefined) {
-                const files = fs.readdirSync("quizzes");
+                const quizDir = path.join(process.cwd(), 'quizzes');
+                const files = fs.readdirSync(quizDir);
                 files.map((fileName) => {
                     const slug = "/quiz/" + fileName.replace(".json", "");
                     const readFile = fs.readFileSync(`quizzes/${fileName}`, "utf-8");
@@ -57,7 +59,8 @@ export default async function handler(req, res) {
 
 
             if (type == "blog" || type == "all" || type == "" || type === undefined) {
-                const posts = fs.readdirSync("posts");
+                const postsDir = path.join(process.cwd(), 'posts');
+                const posts = fs.readdirSync(postsDir);
                 posts.map((fileName) => {
                     const slug = "/blog/" + fileName.replace(".md", "");
                     const readFile = fs.readFileSync(`posts/${fileName}`, "utf-8");
