@@ -1,5 +1,4 @@
 import Link from "next/link";
-// PLEASE NOTE: This component applies to the blog and the quiz page
 
 export default function ArticleCard({ frontmatter }) {
   return (

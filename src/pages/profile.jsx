@@ -3,7 +3,7 @@ import HeroBlog from "@/components/HeroBlog";
 import fs from "fs";
 
 export async function getStaticProps() {
-  const readFile = fs.readFileSync(`profiles/coreteam.json`, "utf-8");
+  const readFile = fs.readFileSync(`data/coreteam.json`, "utf-8");
     const json = JSON.parse(readFile);
     const coreteam = json.coreteam;
     
@@ -27,7 +27,7 @@ export default function Profile({ profiles }) {
           {
             profiles.map((coreteam) => (
               // looping card with length of coreteam
-              <CardName frontmatter={coreteam} key={slug}/>
+              <CardName frontmatter={coreteam} key={coreteam.uuid}/>
             ))
           }
         </div>
