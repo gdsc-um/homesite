@@ -9,7 +9,7 @@ export async function getStaticProps() {
     
 
   return {
-    slug,
+    
     props: {
       profiles: coreteam,
     },
