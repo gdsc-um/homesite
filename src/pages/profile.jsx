@@ -3,7 +3,7 @@ import HeroBlog from "@/components/HeroBlog";
 import fs from "fs";
 
 export async function getStaticProps() {
-  const readFile = fs.readFileSync(`data/coreteam.json`, "utf-8");
+  const readFile = fs.readFileSync(`src/data/coreteam.json`, "utf-8");
     const json = JSON.parse(readFile);
     const coreteam = json.coreteam;
     
