@@ -6,8 +6,10 @@ export async function getStaticProps() {
   const readFile = fs.readFileSync(`profiles/coreteam.json`, "utf-8");
     const json = JSON.parse(readFile);
     const coreteam = json.coreteam;
+    const slug = json.slug;
 
   return {
+    slug,
     props: {
       profiles: coreteam,
     },
@@ -25,7 +27,7 @@ export default function Profile({ profiles }) {
           {
             profiles.map((coreteam) => (
               // looping card with length of coreteam
-              <CardName frontmatter={coreteam} />
+              <CardName frontmatter={coreteam} key={slug}/>
             ))
           }
         </div>
