@@ -1,7 +1,7 @@
 import fs from 'fs';
 
 test('Profile data should be valid', () => {
-    const readFile = fs.readFileSync(`profiles/coreteam.json`, "utf-8");
+    const readFile = fs.readFileSync(`src/data/coreteam.json`, "utf-8");
     const json = JSON.parse(readFile);
     const coreteam = json.coreteam;
 
