@@ -6,7 +6,7 @@ export async function getStaticProps() {
   const readFile = fs.readFileSync(`profiles/coreteam.json`, "utf-8");
     const json = JSON.parse(readFile);
     const coreteam = json.coreteam;
-    const slug = json.slug;
+    
 
   return {
     slug,
