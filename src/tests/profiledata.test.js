@@ -10,6 +10,7 @@ test('Profile data should be valid', () => {
         const role = member.role;
         const picture = member.picture;
         const profile_url = member.profile_url;
+        const uuid = member.uuid;
 
         if (name === undefined || name === null || name === "") {
             throw new Error(`Name is undefined in ${name}`);
@@ -25,6 +26,10 @@ test('Profile data should be valid', () => {
 
         if (profile_url === undefined || profile_url === null || profile_url === "") {
             throw new Error(`profile_url is undefined in ${profile_url}`);
+        }
+
+        if (uuid === undefined || uuid === null || uuid === "") {
+            throw new Error(`uuid is undefined in ${uuid}`);
         }
     });
 
