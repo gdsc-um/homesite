@@ -29,12 +29,12 @@ const Navbar = () => {
           href="/"
           className="flex title-font font-medium items-center text-white "
         >
-          <div className="w-[350px] h-[35px] relative overflow-visible">
+          <div className="w-[250px] h-[25px] lg:w-[350px] lg:h-[35px] relative overflow-visible">
             <Image
               alt="logo"
               src={LogoGDSC}
               fill={true}
-              className="object-cover object-center"
+              className="object-fill"
             />
           </div>
         </Link>
