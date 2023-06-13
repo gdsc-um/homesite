@@ -33,7 +33,7 @@ describe("CardName", () => {
   // expect the picture to be rendered
   it("should render picture", () => {
     render(<CardName frontmatter={frontmatter} />);
-    expect(screen.getByRole("Image")).toBeInTheDocument();
+    expect(screen.getByRole("img")).toBeInTheDocument();
   });
 
   // it should be clickable
