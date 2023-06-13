@@ -1,95 +1,95 @@
 {
- "coreteam": [
+  "coreteam": [
     {
-        "uuid": "377b3207-553d-4546-a898-b808431e63dc",
-        "name": "Anjar Dwi Hariadi",
-        "role": "GDSC Lead",
-        "picture": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_250,q_auto:good,w_250/v1/gcs/platform-data-dsc/avatars/anjar_dwi_hariadi_hariadi_BK8z3SN.png",
-        "profile_url": "https://gdsc.community.dev/u/mmhp7u/"
+      "uuid": "377b3207-553d-4546-a898-b808431e63dc",
+      "name": "Anjar Dwi Hariadi",
+      "role": "GDSC Lead",
+      "picture": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_250,q_auto:good,w_250/v1/gcs/platform-data-dsc/avatars/anjar_dwi_hariadi_hariadi_BK8z3SN.png",
+      "profile_url": "https://gdsc.community.dev/u/mmhp7u/"
     },
     {
-        "uuid": "08142cbf-bb39-4159-9c0c-5b174038b2c0",
-        "name": "Ayu Anggraeni Wulansari",
-        "role": "Administrative & Finance Manager",
-        "picture": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_250,q_auto:good,w_250/v1/gcs/platform-data-dsc/avatars/ayu_anggraeni_wulansari.jpg",
-        "profile_url": "https://gdsc.community.dev/u/m8cdzv/"
+      "uuid": "08142cbf-bb39-4159-9c0c-5b174038b2c0",
+      "name": "Ayu Anggraeni Wulansari",
+      "role": "Administrative & Finance Manager",
+      "picture": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_250,q_auto:good,w_250/v1/gcs/platform-data-dsc/avatars/ayu_anggraeni_wulansari.jpg",
+      "profile_url": "https://gdsc.community.dev/u/m8cdzv/"
     },
     {
-        "uuid": "71d0eeb5-c91b-41eb-a452-43304c162867",
-        "name": "Risa Augusta",
-        "role": "Event Manager",
-        "picture": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_250,q_auto:good,w_250/v1/gcs/platform-data-dsc/avatars/risa_augusta.png",
-        "profile_url": "https://gdsc.community.dev/u/m2q3mw/"
+      "uuid": "71d0eeb5-c91b-41eb-a452-43304c162867",
+      "name": "Risa Augusta",
+      "role": "Event Manager",
+      "picture": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_250,q_auto:good,w_250/v1/gcs/platform-data-dsc/avatars/risa_augusta.png",
+      "profile_url": "https://gdsc.community.dev/u/m2q3mw/"
     },
     {
-        "uuid": "a7f8c8f4-cf70-48b2-90ac-64c9666ae88f",
-        "name": "Richie Daez",
-        "role": "Event Manager",
-        "picture": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_250,q_auto:good,w_250/v1/gcs/platform-data-dsc/avatars/richie_daez.jpg",
-        "profile_url": "https://gdsc.community.dev/u/mzekr6/"
+      "uuid": "a7f8c8f4-cf70-48b2-90ac-64c9666ae88f",
+      "name": "Richie Daez",
+      "role": "Event Manager",
+      "picture": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_250,q_auto:good,w_250/v1/gcs/platform-data-dsc/avatars/richie_daez.jpg",
+      "profile_url": "https://gdsc.community.dev/u/mzekr6/"
     },
     {
-        "uuid": "9ec41372-9e96-4bff-818b-9f28ba0942fe",
-        "name": "Akbar Hamaminatu",
-        "role": "Mobile Dev",
-        "picture": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_250,q_auto:good,w_250/v1/gcs/platform-data-dsc/avatars/akbar_hamaminatu_dCsnj1s.jpg",
-        "profile_url": "https://gdsc.community.dev/u/m9uuvx/"
+      "uuid": "9ec41372-9e96-4bff-818b-9f28ba0942fe",
+      "name": "Akbar Hamaminatu",
+      "role": "Mobile Dev",
+      "picture": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_250,q_auto:good,w_250/v1/gcs/platform-data-dsc/avatars/akbar_hamaminatu_dCsnj1s.jpg",
+      "profile_url": "https://gdsc.community.dev/u/m9uuvx/"
     },
     {
-        "uuid": "8fae6938-e8d5-43c2-a3da-4e18f74fc5cd",
-        "name": "Mohammad Agung Rizki",
-        "role": "Mobile Dev",
-        "picture": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_250,q_auto:good,w_250/v1/gcs/platform-data-dsc/avatars/mohammad_agung_rizki.jpeg",
-        "profile_url": "https://gdsc.community.dev/u/mrh8ru/"
+      "uuid": "8fae6938-e8d5-43c2-a3da-4e18f74fc5cd",
+      "name": "Mohammad Agung Rizki",
+      "role": "Mobile Dev",
+      "picture": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_250,q_auto:good,w_250/v1/gcs/platform-data-dsc/avatars/mohammad_agung_rizki.jpeg",
+      "profile_url": "https://gdsc.community.dev/u/mrh8ru/"
     },
     {
-        "uuid": "ea4ea02e-ee0f-492e-b901-86378ce333d7",
-        "name": "Frans AHW",
-        "role": "Web Dev",
-        "picture": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_250,q_auto:good,w_250/v1/gcs/platform-data-dsc/avatars/frans_ahw_tdRCpoa.jpg",
-        "profile_url": "https://gdsc.community.dev/u/mgu5gb/"
+      "uuid": "ea4ea02e-ee0f-492e-b901-86378ce333d7",
+      "name": "Frans AHW",
+      "role": "Web Dev",
+      "picture": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_3,f_auto,g_face,h_130,q_auto:good,w_130/v1/gcs/platform-data-dsc/avatars/frans_ahw.jpg",
+      "profile_url": "https://gdsc.community.dev/u/mgu5gb/"
     },
     {
-        "uuid": "69287617-7abe-4bab-a836-fd32b6fba99d",
-        "name": "Muhammad Fahli Saputra",
-        "role": "Web Dev",
-        "picture": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_250,q_auto:good,w_250/v1/gcs/platform-data-dsc/avatars/muhammad_fahli_saputra_QS7JfwJ.jpg",
-        "profile_url": "https://gdsc.community.dev/u/m52va7/"
+      "uuid": "69287617-7abe-4bab-a836-fd32b6fba99d",
+      "name": "Muhammad Fahli Saputra",
+      "role": "Web Dev",
+      "picture": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_250,q_auto:good,w_250/v1/gcs/platform-data-dsc/avatars/muhammad_fahli_saputra_QS7JfwJ.jpg",
+      "profile_url": "https://gdsc.community.dev/u/m52va7/"
     },
     {
-        "uuid": "1953134c-691e-44f3-89d9-e207fa0df21a",
-        "name": "Alvian Rahmadani Saputra",
-        "role": "ML/AI",
-        "picture": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_250,q_auto:good,w_250/v1/gcs/platform-data-dsc/avatars/alvian_rahmadani_saputra.jpg",
-        "profile_url": "https://gdsc.community.dev/u/mmbjk7/"
+      "uuid": "1953134c-691e-44f3-89d9-e207fa0df21a",
+      "name": "Alvian Rahmadani Saputra",
+      "role": "ML/AI",
+      "picture": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_250,q_auto:good,w_250/v1/gcs/platform-data-dsc/avatars/alvian_rahmadani_saputra.jpg",
+      "profile_url": "https://gdsc.community.dev/u/mmbjk7/"
     },
     {
-        "uuid": "b69c3072-5c63-45be-8109-5ca03addc433",
-        "name": "Egi Rehani",
-        "role": "Public Relation & Sponsorship",
-        "picture": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_250,q_auto:good,w_250/v1/gcs/platform-data-dsc/avatars/egi_rehani.jpg",
-        "profile_url": "https://gdsc.community.dev/u/mzu6g2/"
+      "uuid": "b69c3072-5c63-45be-8109-5ca03addc433",
+      "name": "Egi Rehani",
+      "role": "Public Relation & Sponsorship",
+      "picture": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_250,q_auto:good,w_250/v1/gcs/platform-data-dsc/avatars/egi_rehani.jpg",
+      "profile_url": "https://gdsc.community.dev/u/mzu6g2/"
     },
     {
-        "uuid": "f73ec192-9246-490b-8181-52d14be0b806",
-        "name": "Alyssa Tyas Milani",
-        "role": "Public Relation & Sponsorship",
-        "picture": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_250,q_auto:good,w_250/v1/gcs/platform-data-dsc/avatars/alyssa_tyas_milani_JGvl62l.jpg",
-        "profile_url": "https://gdsc.community.dev/u/m6e7ug/"
+      "uuid": "f73ec192-9246-490b-8181-52d14be0b806",
+      "name": "Alyssa Tyas Milani",
+      "role": "Public Relation & Sponsorship",
+      "picture": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_250,q_auto:good,w_250/v1/gcs/platform-data-dsc/avatars/alyssa_tyas_milani_JGvl62l.jpg",
+      "profile_url": "https://gdsc.community.dev/u/m6e7ug/"
     },
     {
-        "uuid": "25c47a50-893c-4812-b159-99a9990bac42",
-        "name": "Aisyah Dea",
-        "role": "Creative",
-        "picture": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_250,q_auto:good,w_250/v1/gcs/platform-data-dsc/avatars/aisyah_dea.jpg",
-        "profile_url": "https://gdsc.community.dev/u/mws6hr/"
+      "uuid": "25c47a50-893c-4812-b159-99a9990bac42",
+      "name": "Aisyah Dea",
+      "role": "Creative",
+      "picture": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_250,q_auto:good,w_250/v1/gcs/platform-data-dsc/avatars/aisyah_dea.jpg",
+      "profile_url": "https://gdsc.community.dev/u/mws6hr/"
     },
     {
-        "uuid": "3b98b3be-b59e-4c23-9ca4-877bda16e425",
-        "name": "Ratri Asmaya Puspa",
-        "role": "Creative",
-        "picture": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_250,q_auto:good,w_250/v1/gcs/platform-data-dsc/avatars/ratri_asmaya_puspa.jpg",
-        "profile_url": "https://gdsc.community.dev/u/mruyx5/"
+      "uuid": "3b98b3be-b59e-4c23-9ca4-877bda16e425",
+      "name": "Ratri Asmaya Puspa",
+      "role": "Creative",
+      "picture": "https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_250,q_auto:good,w_250/v1/gcs/platform-data-dsc/avatars/ratri_asmaya_puspa.jpg",
+      "profile_url": "https://gdsc.community.dev/u/mruyx5/"
     }
- ]
+  ]
 }

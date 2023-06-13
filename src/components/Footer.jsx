@@ -48,7 +48,7 @@ const Footer = () => {
             <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">
               SITE MAP
             </h2>
-            <nav className="flex mb-10 gap-5">
+            <nav className="flex justify-center mb-10 gap-5">
               {FooterLinks.map((link) => (
                 <Link
                   key={link.link}

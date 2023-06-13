@@ -30,10 +30,10 @@ export async function getStaticProps({ params: { slug } }) {
 export default function Artikel({ frontmatter, content }) {
   return (
     <div className="w-full py-10">
-      <div className="container mx-auto prose">
+      <article className="container mx-auto prose-full text-white">
         <h1>{frontmatter.title}</h1>
         <ReactMarkdown>{content}</ReactMarkdown>
-      </div>
+      </article>
     </div>
   );
 }
