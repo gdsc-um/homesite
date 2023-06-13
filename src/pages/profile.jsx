@@ -1,5 +1,4 @@
 import CardName from "@/components/CardName";
-import HeroBlog from "@/components/HeroBlog";
 import fs from "fs";
 
 export async function getStaticProps() {

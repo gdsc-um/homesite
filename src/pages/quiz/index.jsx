@@ -1,5 +1,4 @@
 import ArticleCard from "@/components/ArticleCard";
-import HeroBlog from "@/components/HeroBlog";
 import fs from "fs";
 
 export async function getStaticProps() {
@@ -24,14 +23,16 @@ export async function getStaticProps() {
 
 export default function Quiz({ quizzes }) {
   return (
-
     <div className="w-full min-h-screen">
-      <HeroBlog />
       <div className="mx-auto container py-32 flex flex-col gap-8 justify-center items-center">
         <h1 className="text-xl font-bold text-white">Quiz & Latihan</h1>
         <div className="w-full mx-auto container flex flex-wrap">
           {quizzes.map(({ slug, metadata }) => (
-            <ArticleCard slug={`/quiz/${slug}`} frontmatter={metadata} key={slug} />
+            <ArticleCard
+              slug={`/quiz/${slug}`}
+              frontmatter={metadata}
+              key={slug}
+            />
           ))}
         </div>
       </div>
