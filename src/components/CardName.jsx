@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 /**
@@ -17,9 +18,10 @@ export default function ArticleCard({ frontmatter }) {
     >
       <div className="relative h-full rounded-lg border-2 border-gray-300 flex flex-col gap-3 overflow-hidden p-5 text-white">
         <div className="w-full h-60  rounded">
-          <img
+          <Image
             src={`${frontmatter.picture}`}
             alt="profile"
+            fill
             className="w-full h-full object-cover object-center rounded-lg overflow-hidden"
           />
         </div>

@@ -33,7 +33,7 @@ export default function Artikel({ frontmatter, content }) {
       <article className="container mx-auto prose-full text-white">
         <h1>{frontmatter.title}</h1>
         <ReactMarkdown>{content}</ReactMarkdown>
-      </div>
+      </article>
     </div>
   );
 }
