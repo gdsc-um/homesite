@@ -1,4 +1,4 @@
-import LogoGDSC from "@/assets/logo_gdsc.svg";
+import LogoGDSC from "@/assets/gdsc-logo-light.png";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -8,39 +8,36 @@ const NavLinks = [
     link: "/",
   },
   {
-    title: "Blog",
-    link: "/blog",
+    title: "Profile",
+    link: "/profile",
   },
   {
     title: "Quiz",
     link: "/quiz",
   },
   {
-    title: "Profile",
-    link: "/profile",
+    title: "Artikel",
+    link: "/blog",
   },
 ];
 
 const Navbar = () => {
   return (
-    <header className="text-white body-font shadow-md bg-[#010C1B]">
-      <div className="container mx-auto flex flex-wrap px-0 py-5 flex-col md:flex-row items-center bg-[#010C1B]">
-        <Link
-          href="/"
-          className="flex title-font font-medium items-center text-white "
-        >
+    <header className="text-black body-font shadow-md bg-white">
+      <div className="container mx-auto flex flex-wrap px-0 py-5 flex-col md:flex-row items-center">
+        <Link href="/" className="flex title-font font-medium items-center">
           <div className="w-[250px] h-[25px] lg:w-[350px] lg:h-[35px] relative overflow-visible">
             <Image
               alt="logo"
               src={LogoGDSC}
               fill={true}
-              className="object-fill"
+              className="object-fill text-black"
             />
           </div>
         </Link>
         <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
           {NavLinks.map((link) => (
-            <Link key={link.link} href={link.link} className="mr-5 text-white">
+            <Link key={link.link} href={link.link} className="mr-5 text-black">
               {link.title}
             </Link>
           ))}
