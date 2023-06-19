@@ -9,16 +9,16 @@ const FooterLinks = [
     link: "/",
   },
   {
-    title: "Blog",
-    link: "/blog",
+    title: "Profile",
+    link: "/profile",
   },
   {
     title: "Quiz",
     link: "/quiz",
   },
   {
-    title: "Profile",
-    link: "/profile",
+    title: "Artikel",
+    link: "/blog",
   },
 ];
 
