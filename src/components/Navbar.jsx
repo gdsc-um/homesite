@@ -12,6 +12,10 @@ const NavLinks = [
     link: "/profile",
   },
   {
+    title: "Team",
+    link: "/team",
+  },
+  {
     title: "Quiz",
     link: "/quiz",
   },
@@ -23,7 +27,7 @@ const NavLinks = [
 
 const Navbar = () => {
   return (
-    <header className="text-black body-font shadow-md bg-white">
+    <header className="text-black body-font bg-white border-b-2">
       <div className="container mx-auto flex flex-wrap px-0 py-5 flex-col md:flex-row items-center">
         <Link href="/" className="flex title-font font-medium items-center">
           <div className="w-[250px] h-[25px] lg:w-[350px] lg:h-[35px] relative overflow-visible">
