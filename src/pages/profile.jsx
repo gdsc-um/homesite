@@ -1,3 +1,5 @@
+import StrukturImage from "@/assets/struktur.png";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Profile() {
@@ -21,10 +23,13 @@ export default function Profile() {
           Core Team.
         </p>
       </div>
-      <div className="w-full py-28 flex flex-col justify-center items-center gap-3">
+      <div className="w-full py-12 flex flex-col justify-center items-center gap-3">
         <h1 className="text-black text-4xl">Struktur GDSC UM</h1>
+        <div className="w-full flex flex-col justify-center items-center gap-3 pt-12">
+          <Image src={StrukturImage} alt="Struktur" width={1280} height={1280} />
+        </div>
       </div>
-      <div className="w-full py-28 flex flex-col justify-center items-center gap-3">
+      <div className="w-full py-16 flex flex-col justify-center items-center gap-3">
         <h1 className="text-black text-4xl">Halaman bevy Kami</h1>
         <Link
           className="mt-2 text-coreBlue-primary font-bold text-2xl hover:underline hover:text-coreBlue-500"
