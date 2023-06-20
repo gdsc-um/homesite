@@ -31,8 +31,8 @@ export async function getStaticProps({ params: { slug } }) {
 
 export default function Artikel({ frontmatter, content }) {
   return (
-    <div className="w-full py-10">
-      <article className="container mx-auto prose-full prose-lg text-white">
+    <div className="w-full py-10 bg-white">
+      <article className="container mx-auto prose-full prose-lg text-black mb-20">
         {/* check if frontmatter available, if some random image */}
         {!frontmatter.cover ? (
           <div className="overflow-hidden">
@@ -56,16 +56,16 @@ export default function Artikel({ frontmatter, content }) {
               />
             </div>
           )}
-        <h1 className="text-4xl font-bold pt-8 mb-3">{frontmatter.title}</h1>
+        <h1 className="text-6xl text-black font-bold pt-8 mb-3 text-center">{frontmatter.title}</h1>
         {/* render date in Indonesian locale */}
-        <p className="text-gray-400 text-md my-0">
+        <p className="text-black text-md my-0 text-center">
           {new Date(frontmatter.date).toLocaleDateString("id-ID", {
             day: "numeric",
             month: "long",
             year: "numeric",
           })}
         </p>
-        <ReactMarkdown>{content}</ReactMarkdown>
+        <ReactMarkdown className="text-black px-32 text-justify">{content}</ReactMarkdown>
       </article>
     </div>
   );
