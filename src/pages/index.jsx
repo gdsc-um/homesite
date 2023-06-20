@@ -87,7 +87,7 @@ export default function Home({ posts }) {
       {/* Apa yang dipelajarin */}
       <div className="bg-white py-12 w-full">
         <div className="mx-auto container">
-          <h3 className="text-center text-black font-bold text-2xl mb-8">
+          <h3 className="text-center pb-4 pt-2 text-black font-bold text-5xl mb-8">
             Yang Dipelajari di GDSC UM
           </h3>
           <div className="grid lg:grid-cols-3 gap-3 px-16">
@@ -144,7 +144,7 @@ export default function Home({ posts }) {
       {/* Artikel terbaru */}
       <div className="bg-[#E3F2FD] py-12">
         <div className="w-full mx-auto container px-16 flex flex-col justify-center items-center">
-          <h3 className="font-bold text-2xl text-black text-center">
+          <h3 className="font-bold text-5xl py-4 text-black text-center">
             Artikel Terbaru
           </h3>
           <div className="grid lg:grid-cols-3 gap-3 mt-8">
