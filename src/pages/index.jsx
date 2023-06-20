@@ -1,18 +1,35 @@
+import ApaItu from "@/assets/apa-itu-gdsc.png";
+import HeroImage from "@/assets/gdsc-global.png";
+import mlai from "@/assets/ml-ai.png";
+import mobiledev from "@/assets/mobile-dev.png";
+import webdev from "@/assets/web-dev.png";
+import ArticleCard from "@/components/ArticleCard";
+import fs from "fs";
+import matter from "gray-matter";
 import Image from "next/image";
 import Link from "next/link";
-import HeroImage from "@/assets/gdsc-global.png";
-import ApaItu from "@/assets/apa-itu-gdsc.png";
-import webdev from "@/assets/web-dev.png";
-import mobiledev from "@/assets/mobile-dev.png";
-import mlai from "@/assets/ml-ai.png";
-// import Hero from "@/components/Hero";
-// import LogoGDSC from "@/assets/gdsc-logo-light.png";
 
-const title = "Google Developer Student Clubs UM";
-const subtitle =
-  "Google Developer Student Clubs are university based community groups for students interested in Google developer technologies. By joining a GDSC, students grow their knowledge in a peer-to-peer learning environment and build solutions for local businesses and their community.";
+export async function getStaticProps() {
+  const files = fs.readdirSync("posts");
 
-export default function Home() {
+  const posts = files.map((fileName) => {
+    const slug = fileName.replace(".md", "");
+    const readFile = fs.readFileSync(`posts/${fileName}`, "utf-8");
+    const { data: frontmatter } = matter(readFile);
+    return {
+      slug,
+      frontmatter,
+    };
+  });
+
+  return {
+    props: {
+      posts,
+    },
+  };
+}
+
+export default function Home({ posts }) {
   return (
     <div className="w-full min-h-screen bg-white">
       {/* <Hero
@@ -126,10 +143,20 @@ export default function Home() {
       </div>
       {/* Artikel terbaru */}
       <div className="bg-[#E3F2FD] py-12">
-        <div className="w-full mx-auto container px-16">
+        <div className="w-full mx-auto container px-16 flex flex-col justify-center items-center">
           <h3 className="font-bold text-2xl text-black text-center">
             Artikel Terbaru
           </h3>
+          <div className="grid lg:grid-cols-3 gap-3 mt-8">
+            {posts.map(({ slug, frontmatter }) => (
+              <ArticleCard
+                slug={`/blog/${slug}`}
+                frontmatter={frontmatter}
+                key={slug}
+              />
+            ))}
+          </div>
+          <Link className="mt-8 px-6 py-3 bg-coreBlue-primary rounded-full text-white text-xl hover:bg-coreBlue-500 hover:outline-offset-2 hover:outline hover:outline-coreBlue-500" href={"/blog"}>Lihat artikel lainnya</Link>
         </div>
       </div>
     </div>

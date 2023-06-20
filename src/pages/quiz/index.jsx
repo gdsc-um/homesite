@@ -23,10 +23,10 @@ export async function getStaticProps() {
 
 export default function Quiz({ quizzes }) {
   return (
-    <div className="w-full min-h-screen">
+    <div className="w-full min-h-screen bg-white">
       <div className="mx-auto container py-32 flex flex-col gap-8 justify-center items-center">
-        <h1 className="text-xl font-bold text-white">Quiz & Latihan</h1>
-        <div className="w-full mx-auto container flex flex-wrap">
+        <h1 className="text-6xl font-bold text-black">Quiz & Latihan</h1>
+        <div className="grid lg:grid-cols-3 gap-3 mt-8">
           {quizzes.map(({ slug, metadata }) => (
             <ArticleCard
               slug={`/quiz/${slug}`}

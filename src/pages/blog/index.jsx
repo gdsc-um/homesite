@@ -1,8 +1,6 @@
 import ArticleCard from "@/components/ArticleCard";
-import Hero from "@/components/Hero";
 import fs from "fs";
 import matter from "gray-matter";
-import HeroImage from "@/assets/hero-blog.png";
 
 export async function getStaticProps() {
   const files = fs.readdirSync("posts");
@@ -30,19 +28,10 @@ const subtitle =
 
 export default function Blog({ posts }) {
   return (
-    <div className="w-full min-h-screen">
-      <Hero
-        title={title}
-        subtitle={subtitle}
-        image={HeroImage}
-        isBeranda={false}
-        isBlog={true}
-        isQuiz={false}
-        isProfile={false}
-      />
+    <div className="w-full min-h-screen bg-white">
       <div className="mx-auto container py-32 flex flex-col gap-8 justify-center items-center">
-        <h1 className="text-xl font-bold text-white">Postingan Terbaru</h1>
-        <div className="w-full mx-auto container flex flex-wrap">
+        <h1 className="text-6xl font-bold text-black">Postingan Terbaru</h1>
+        <div className="grid lg:grid-cols-3 gap-3 mt-8">
           {posts.map(({ slug, frontmatter }) => (
             <ArticleCard
               slug={`/blog/${slug}`}
