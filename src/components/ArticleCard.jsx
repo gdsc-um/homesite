@@ -1,7 +1,6 @@
 import IMAGEPLACEHOLDER from "@/assets/placeholder.jpg";
 import Image from "next/image";
 import Link from "next/link";
-// PLEASE NOTE: This component applies to the blog and the quiz page
 
 /**
  * @param {string} slug - the slug of the article
@@ -23,8 +22,11 @@ export default function ArticleCard({ slug, frontmatter }) {
   });
 
   return (
-    <Link href={`${slug}`} className="lg:w-1/3 sm:w-1/2 w-full p-3">
-      <div className="relative h-full rounded-lg border-2 border-gray-300 flex flex-col gap-3 overflow-hidden p-5 text-white">
+    <Link
+      href={`${slug}`}
+      className="rounded-xl flex flex-col items-center justify-center gap-3 bg-white shadow-xl hover:outline hover:outline-coreBlue-500 hover:outline-offset-2"
+    >
+      <div className="relative h-full rounded-lg flex flex-col gap-3 overflow-hidden p-5 text-white ">
         <div className="w-full h-60 bg-[#D9D9D9] rounded">
           {frontmatter.thumbnail ? (
             <Image
@@ -44,16 +46,22 @@ export default function ArticleCard({ slug, frontmatter }) {
             />
           )}
         </div>
-        <h2 className="text-m font-semibold">{frontmatter.title}</h2>
-        {/* pull data from date frontmatter and convert it to indonesian locale */}
-        <time dateTime={frontmatter.date} id="articledate" className="text-sm">
+        <h2 className="text-2xl font-semibold text-black">
+          {frontmatter.title}
+        </h2>
+        <time
+          dateTime={frontmatter.date}
+          id="articledate"
+          className="text-sm text-black"
+        >
           {date}
         </time>
         {frontmatter.excerpt && (
-          <p className="text-sm">{frontmatter.excerpt.slice(0, 100)}...</p>
+          <p className="text-sm text-black">
+            {frontmatter.excerpt.slice(0, 100)}...
+          </p>
         )}
         <div className="flex flex-wrap gap-3">
-          {/* show the tags from the tags array, show max 3 tags */}
           {frontmatter.tags.slice(0, 3).map((tag) => (
             <span
               key={tag}
