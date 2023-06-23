@@ -17,8 +17,10 @@ export default function Team({ profiles }) {
   return (
     <div className="w-full min-h-screen bg-white">
       <div className="mx-auto container py-32 flex flex-col gap-8 justify-center items-center">
-        <h1 className="text-6xl font-bold text-coreBlue-primary">Ini adalah tim kami</h1>
-        <div className="grid lg:grid-cols-4 gap-3 mt-8">
+        <h1 className="text-3xl lg:text-6xl text-center font-bold text-coreBlue-primary">
+          Ini adalah tim kami
+        </h1>
+        <div className="grid lg:grid-cols-4 gap-5 mt-8">
           {/* looping more card for coreteam */}
           {profiles.map((coreteam) => (
             // looping card with length of coreteam

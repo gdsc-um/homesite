@@ -13,6 +13,10 @@ const FooterLinks = [
     link: "/profile",
   },
   {
+    title: "Team",
+    link: "/team",
+  },
+  {
     title: "Quiz",
     link: "/quiz",
   },
@@ -45,7 +49,7 @@ const Footer = () => {
         </div>
         <div className="flex-grow lg:flex-grow-0 flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center lg:gap-8">
           <div className="w-full px-4">
-            <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">
+            <h2 className="title-font font-semibold text-white tracking-widest text-sm mb-3">
               SITE MAP
             </h2>
             <nav className="flex justify-center mb-10 gap-5">
@@ -53,7 +57,7 @@ const Footer = () => {
                 <Link
                   key={link.link}
                   href={link.link}
-                  className="text-white hover:text-white"
+                  className="text-white font-medium"
                 >
                   {link.title}
                 </Link>

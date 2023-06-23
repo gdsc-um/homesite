@@ -25,8 +25,10 @@ export default function Quiz({ quizzes }) {
   return (
     <div className="w-full min-h-screen bg-white">
       <div className="mx-auto container py-32 flex flex-col gap-8 justify-center items-center">
-        <h1 className="text-6xl font-bold text-black">Quiz & Latihan</h1>
-        <div className="grid lg:grid-cols-3 gap-3 mt-8">
+        <h1 className="text-center text-3xl lg:text-6xl font-bold text-black">
+          Quiz & Latihan
+        </h1>
+        <div className="grid lg:grid-cols-3 gap-3 mt-8 px-5">
           {quizzes.map(({ slug, metadata }) => (
             <ArticleCard
               slug={`/quiz/${slug}`}

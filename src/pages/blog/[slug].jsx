@@ -35,28 +35,29 @@ export default function Artikel({ frontmatter, content }) {
       <article className="container mx-auto prose-full prose-lg text-black mb-20">
         {/* check if frontmatter available, if some random image */}
         {!frontmatter.cover ? (
-          <div className="overflow-hidden">
+          <div className="overflow-hidden px-5">
             <Image
               src={IMAGEPLACEHOLDER}
               alt=""
-              className="w-full h-[720px] object-cover rounded-lg"
+              className="w-full lg:h-[720px] h-80 object-cover rounded-lg"
               width={1280}
               height={720}
             />
           </div>
-        )
-          : (
-            <div className="overflow-hidden">
-              <Image
-                src={frontmatter.cover}
-                alt=""
-                className="w-full h-[720px] object-cover rounded-lg"
-                width={1280}
-                height={720}
-              />
-            </div>
-          )}
-        <h1 className="text-6xl text-black font-bold pt-8 mb-3 text-center">{frontmatter.title}</h1>
+        ) : (
+          <div className="overflow-hidden px-5">
+            <Image
+              src={frontmatter.cover}
+              alt=""
+              className="w-full lg:h-[720px] h-80 object-cover rounded-lg"
+              width={1280}
+              height={720}
+            />
+          </div>
+        )}
+        <h1 className="text-3xl lg:text-6xl text-black font-bold pt-8 mb-3 text-center">
+          {frontmatter.title}
+        </h1>
         {/* render date in Indonesian locale */}
         <p className="text-black text-md my-0 text-center">
           {new Date(frontmatter.date).toLocaleDateString("id-ID", {
@@ -65,7 +66,9 @@ export default function Artikel({ frontmatter, content }) {
             year: "numeric",
           })}
         </p>
-        <ReactMarkdown className="text-black px-32 text-justify">{content}</ReactMarkdown>
+        <ReactMarkdown className="text-black px-5 lg:px-32 text-justify">
+          {content}
+        </ReactMarkdown>
       </article>
     </div>
   );

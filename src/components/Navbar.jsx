@@ -28,7 +28,7 @@ const NavLinks = [
 const Navbar = () => {
   return (
     <header className="text-black body-font bg-white border-b-2">
-      <div className="container mx-auto flex flex-wrap px-0 py-5 flex-col md:flex-row items-center">
+      <div className="container mx-auto flex flex-wrap px-0 py-5 flex-col md:flex-row items-center gap-3">
         <Link href="/" className="flex title-font font-medium items-center">
           <div className="w-[250px] h-[25px] lg:w-[350px] lg:h-[35px] relative overflow-visible">
             <Image
@@ -39,9 +39,13 @@ const Navbar = () => {
             />
           </div>
         </Link>
-        <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
+        <nav className="flex flex-wrap items-center text-base justify-center gap-5">
           {NavLinks.map((link) => (
-            <Link key={link.link} href={link.link} className="mr-5 text-black">
+            <Link
+              key={link.link}
+              href={link.link}
+              className="mr-0 text-black font-medium"
+            >
               {link.title}
             </Link>
           ))}

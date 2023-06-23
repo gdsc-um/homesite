@@ -133,45 +133,45 @@ const Quiz = (questions) => {
         <>
           <div className="w-full h-[40vh] px-10 bg-white flex justify-center items-center relative flex-col">
             <div className="absolute top-5 left-5 px-5 py-3 bg-neutral-100 rounded shadow-md">
-              <h3 className="text-[#262626] text-[1vw] font-semibold">
+              <h3 className="text-[#262626] text-[10px] lg:text-[1vw] font-semibold">
                 Question {currentQuestion + 1}
               </h3>
             </div>
             <Link href="/quiz">
               <div className="absolute top-5 right-5 px-5 py-3 bg-neutral-100 rounded shadow active:scale-90 duration-200 lg:hover:scale-105 lg:hover:shadow-md">
-                <h3 className="text-[#262626] text-[1vw] font-semibold">
+                <h3 className="text-[#262626] text-[10px] lg:text-[1vw] font-semibold">
                   Back to Quizzes
                 </h3>
               </div>
             </Link>
-            <h2 className="text-start text-[1.6vw] text-[#262626] whitespace-pre-line">
+            <h2 className="pt-[120px] text-center text-2xl lg:text-[1.6vw] text-[#262626] whitespace-pre-line mb-5">
               {questions.data.questions[currentQuestion].question}
             </h2>
             {/* image container */}
             <div className="">
-              {questions.data.questions[currentQuestion].image && ( 
+              {questions.data.questions[currentQuestion].image && (
                 // if there is an image in the question show
-                <div className="max-w-[50vh]">
+                <div className="max-w-[50vh] overflow-hidden rounded-lg">
                   <img
                     src={questions.data.questions[currentQuestion].image}
                     alt="question image"
-                    />
+                  />
                 </div>
               )}
             </div>
           </div>
-          <div className="w-full h-[90vh] flex justify-center items-center">
-            <div className=" grid grid-cols-2 gap-8 gap-x-12">
+          <div className="w-full py-20 flex justify-center items-center">
+            <div className=" grid grid-cols-2 gap-8 gap-x-12 px-5">
               <button
                 onClick={() =>
                   handleQuestion(
                     questions.data.questions[currentQuestion].options[0],
                   )
                 }
-                className="flex flex-col items-center"
+                className="flex flex-col gap-5 items-center"
                 style={{ alignSelf: "flex-end" }}
               >
-                <div className="max-w-[30vh]">
+                <div className="max-w-[30vh] overflow-hidden rounded-lg">
                   {questions.data.questions[currentQuestion].options[0]
                     .image ? (
                     <img
@@ -183,7 +183,7 @@ const Quiz = (questions) => {
                     />
                   ) : null}
                 </div>
-                <div className="w-[35vw] h-[15vh] rounded-md flex justify-center items-center text-[#262626] text-[1.7vw] font-semibold bg-white hover:cursor-pointer lg:hover:shadow-lg shadow lg:hover:scale-105 lg:hover:-translate-y-2 duration-200 active:scale-90">
+                <div className="w-[35vw] h-[15vh] rounded-md flex justify-center items-center text-[#262626] text-base lg:text-[1.7vw] font-semibold bg-white hover:cursor-pointer lg:hover:shadow-lg shadow lg:hover:scale-105 lg:hover:-translate-y-2 duration-200 active:scale-90">
                   {questions.data.questions[currentQuestion].options[0].answer}
                 </div>
               </button>
@@ -193,11 +193,11 @@ const Quiz = (questions) => {
                     questions.data.questions[currentQuestion].options[1],
                   )
                 }
-                className="flex flex-col items-center"
+                className="flex flex-col items-center gap-5"
                 style={{ alignSelf: "flex-end" }}
               >
                 {questions.data.questions[currentQuestion].options[1].image ? (
-                  <div className="max-w-[30vh]">
+                  <div className="max-w-[30vh] overflow-hidden rounded-lg">
                     <img
                       src={
                         questions.data.questions[currentQuestion].options[1]
@@ -207,7 +207,7 @@ const Quiz = (questions) => {
                     />
                   </div>
                 ) : null}
-                <div className="w-[35vw] h-[15vh] rounded-md flex justify-center items-center text-[#262626] text-[1.7vw] font-semibold bg-white hover:cursor-pointer lg:hover:shadow-lg shadow lg:hover:scale-105 lg:hover:-translate-y-2 duration-200 active:scale-90">
+                <div className="w-[35vw] h-[15vh] rounded-md flex justify-center items-center text-[#262626] text-base lg:text-[1.7vw] font-semibold bg-white hover:cursor-pointer lg:hover:shadow-lg shadow lg:hover:scale-105 lg:hover:-translate-y-2 duration-200 active:scale-90">
                   {questions.data.questions[currentQuestion].options[1].answer}
                 </div>
               </button>
@@ -217,10 +217,10 @@ const Quiz = (questions) => {
                     questions.data.questions[currentQuestion].options[2],
                   )
                 }
-                className="flex flex-col items-center"
+                className="flex flex-col items-center gap-5"
                 style={{ alignSelf: "flex-end" }}
               >
-                <div className="max-w-[30vh]">
+                <div className="max-w-[30vh] overflow-hidden rounded-lg">
                   {questions.data.questions[currentQuestion].options[2]
                     .image ? (
                     <img
@@ -232,7 +232,7 @@ const Quiz = (questions) => {
                     />
                   ) : null}
                 </div>
-                <div className="w-[35vw] h-[15vh] rounded-md flex justify-center items-center text-[#262626] text-[1.7vw] font-semibold bg-white hover:cursor-pointer lg:hover:shadow-lg shadow lg:hover:scale-105 lg:hover:-translate-y-2 duration-200 active:scale-90">
+                <div className="w-[35vw] h-[15vh] rounded-md flex justify-center items-center text-[#262626] text-base lg:text-[1.7vw] font-semibold bg-white hover:cursor-pointer lg:hover:shadow-lg shadow lg:hover:scale-105 lg:hover:-translate-y-2 duration-200 active:scale-90">
                   {questions.data.questions[currentQuestion].options[2].answer}
                 </div>
               </button>
@@ -242,10 +242,10 @@ const Quiz = (questions) => {
                     questions.data.questions[currentQuestion].options[3],
                   )
                 }
-                className="flex flex-col items-center"
+                className="flex flex-col items-center gap-5"
                 style={{ alignSelf: "flex-end" }}
               >
-                <div className="max-w-[30vh]">
+                <div className="max-w-[30vh] overflow-hidden rounded-lg">
                   {questions.data.questions[currentQuestion].options[3]
                     .image ? (
                     <img
@@ -257,7 +257,7 @@ const Quiz = (questions) => {
                     />
                   ) : null}
                 </div>
-                <div className="w-[35vw] h-[15vh] rounded-md flex justify-center items-center text-[#262626] text-[1.7vw] font-semibold bg-white hover:cursor-pointer lg:hover:shadow-lg shadow lg:hover:scale-105 lg:hover:-translate-y-2 duration-200 active:scale-90">
+                <div className="w-[35vw] h-[15vh] rounded-md flex justify-center items-center text-[#262626] text-base lg:text-[1.7vw] font-semibold bg-white hover:cursor-pointer lg:hover:shadow-lg shadow lg:hover:scale-105 lg:hover:-translate-y-2 duration-200 active:scale-90">
                   {questions.data.questions[currentQuestion].options[3].answer}
                 </div>
               </button>
