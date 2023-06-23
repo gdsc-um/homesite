@@ -6,10 +6,10 @@ export default function NotFound() {
   return (
     <div className="w-full py-24 flex flex-col justify-center items-center px-5 bg-white space-y-4">
       <Image src={ImageNotFound} alt="Maitenance" className="" />
-      <p className="text-5xl font-semibold text-coreBlue-primary">
+      <p className="text-center text-5xl font-semibold text-coreBlue-primary">
         Oops.. Halaman tidak ada.
       </p>
-      <p className="text-xl text-gray-900">
+      <p className="text-center text-xl text-gray-900">
         Mohon maaf, halaman yang kamu cari tidak ditemukan
       </p>
       <Link

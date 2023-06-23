@@ -46,22 +46,22 @@ export default function ArticleCard({ slug, frontmatter }) {
             />
           )}
         </div>
-        <h2 className="text-2xl font-semibold text-black">
+        <h2 className="text-2xl font-semibold text-black text-center lg:text-left">
           {frontmatter.title}
         </h2>
         <time
           dateTime={frontmatter.date}
           id="articledate"
-          className="text-sm text-black"
+          className="text-sm text-black text-center lg:text-left"
         >
           {date}
         </time>
         {frontmatter.excerpt && (
-          <p className="text-sm text-black">
+          <p className="text-sm text-black text-center lg:text-left">
             {frontmatter.excerpt.slice(0, 100)}...
           </p>
         )}
-        <div className="flex flex-wrap gap-3">
+        <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
           {frontmatter.tags.slice(0, 3).map((tag) => (
             <span
               key={tag}
