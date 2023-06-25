@@ -1,7 +1,7 @@
-import React from "react";
 import LogoGDSC from "@/assets/logo_gdsc.svg";
 import Image from "next/image";
 import Link from "next/link";
+import React from "react";
 
 const FooterLinks = [
   {
@@ -63,6 +63,16 @@ const Footer = () => {
                 </Link>
               ))}
             </nav>
+            <Link href="https://vercel.com?utm_source=gdsc-um&utm_campaign=oss"
+            className="flex justify-center mb-10 gap-5 lg:justify-end lg:items-end">
+              <Image
+                alt="vercel-spnsors"
+                src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg"
+                width={220}
+                height={30}
+                className="object-cover object-center"
+              />
+            </Link>
           </div>
         </div>
       </div>

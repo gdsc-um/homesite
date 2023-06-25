@@ -1,4 +1,5 @@
 # GDSC Universitas Negeri Malang Homesite
+
 [![Test](https://github.com/GDSC-UM-Indonesia/nextjs_finalproject/actions/workflows/tests.yml/badge.svg)](https://github.com/GDSC-UM-Indonesia/nextjs_finalproject/actions/workflows/tests.yml)
 
 ## Tentang
@@ -25,3 +26,7 @@ GDSC Universitas Negeri Malang Homesite adalah sebuah website yang dibuat untuk 
 Dokumentasi aplikasi ini di folder `asset`, `public`, `post`, `quizzes` dan `data` dilisensikan di bawah lisensi CC-BY-SA 4.0.
 
 Semua kode lain di repositori ini dilisensikan di bawah lisensi MIT.
+
+## Sponsors
+
+[![Powered by Vercel](https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg)](https://vercel.com?utm_source=gdsc-um&utm_campaign=oss)
