@@ -27,7 +27,7 @@ const nextConfig = {
             "frame-ancestors": "'none'",
             "frame-src": "'none'",
             "img-src":
-              "'self' https://drive.google.com https://*.googleusercontent.com https://*.datocms-assets.com",
+              "'self' https://drive.google.com https://*.googleusercontent.com https://*.datocms-assets.com https://res.cloudinary.com https://*.googleapis.com https://*.gstatic.com data:",
             "manifest-src": "'self'",
             "media-src": "'self'",
             "object-src": "'none'",
