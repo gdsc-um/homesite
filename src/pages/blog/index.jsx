@@ -1,6 +1,7 @@
 import ArticleCard from "@/components/ArticleCard";
 import fs from "fs";
 import matter from "gray-matter";
+import Head from "next/head";
 
 export async function getStaticProps() {
   const files = fs.readdirSync("posts");
@@ -29,6 +30,13 @@ const subtitle =
 export default function Blog({ posts }) {
   return (
     <div className="w-full min-h-screen bg-white">
+      <Head>
+        <title>Daftar Artikel | GDSC Universitas Negeri Malang</title>
+        <meta
+          name="description"
+          content="Daftar rilisan dan artikel anggota GDSC UM"
+        />
+      </Head>
       <div className="mx-auto container py-32 flex flex-col gap-8 justify-center items-center">
         <h1 className="text-center text-3xl lg:text-6xl font-bold text-black">
           Postingan Terbaru

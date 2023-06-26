@@ -25,7 +25,7 @@ export default function ArticleCard({ frontmatter }) {
         </div>
         <h2 className="text-xl font-semibold">{frontmatter.name}</h2>
         {/* show it's role */}
-        <h4 className="">{frontmatter.role}</h4>
+        <p className="">{frontmatter.role}</p>
       </div>
     </Link>
   );

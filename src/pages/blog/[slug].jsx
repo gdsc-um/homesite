@@ -1,6 +1,7 @@
 import IMAGEPLACEHOLDER from "@/assets/placeholder.jpg";
 import fs from "fs";
 import matter from "gray-matter";
+import Head from "next/head";
 import Image from "next/image";
 import ReactMarkdown from "react-markdown";
 
@@ -32,6 +33,10 @@ export async function getStaticProps({ params: { slug } }) {
 export default function Artikel({ frontmatter, content }) {
   return (
     <div className="w-full py-10 bg-white">
+      <Head>
+        <title>{frontmatter.title} | GDSC Universitas Negeri Malang</title>
+        <meta name="description" content={frontmatter.description} />
+      </Head>
       <article className="container mx-auto prose-full prose-lg text-black mb-20">
         {/* check if frontmatter available, if some random image */}
         {!frontmatter.thumbnail ? (

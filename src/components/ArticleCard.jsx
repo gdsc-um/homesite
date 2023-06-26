@@ -46,9 +46,9 @@ export default function ArticleCard({ slug, frontmatter }) {
             />
           )}
         </div>
-        <h2 className="text-2xl font-semibold text-black text-center lg:text-left">
+        <h3 className="text-2xl font-semibold text-black text-center lg:text-left">
           {frontmatter.title}
-        </h2>
+        </h3>
         <time
           dateTime={frontmatter.date}
           id="articledate"

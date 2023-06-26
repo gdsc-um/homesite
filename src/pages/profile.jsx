@@ -1,11 +1,20 @@
 import StrukturImage from "@/assets/struktur.png";
 import Partner from "@/components/Partner";
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Profile() {
   return (
     <div className="w-full min-h-screen bg-white">
+      <Head>
+        <title>Tentang GDSC UM</title>
+        <meta
+          name="description"
+          content="Gambaran singkat struktur dan kerjasama GDSC UM"
+        />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className="w-full py-28 flex flex-col justify-center items-center bg-[#E8F5E9] gap-3">
         <h1 className="text-coreBlue-primary font-bold text-center text-3xl lg:text-6xl">
           Tentang GDSC Universitas Negeri Malang
@@ -25,7 +34,7 @@ export default function Profile() {
         </p>
       </div>
       <div className="w-full py-12 flex flex-col justify-center items-center gap-3">
-        <h1 className="text-black text-3xl lg:text-4xl">Struktur GDSC UM</h1>
+        <h2 className="text-black text-3xl lg:text-4xl">Struktur GDSC UM</h2>
         <div className="w-full flex flex-col justify-center items-center gap-3 pt-12">
           <Image
             src={StrukturImage}
@@ -36,7 +45,7 @@ export default function Profile() {
         </div>
       </div>
       <div className="w-full py-16 flex flex-col justify-center items-center gap-3 text-center px-5">
-        <h1 className="text-black text-3xl lg:text-4xl">Halaman bevy Kami</h1>
+        <h2 className="text-black text-3xl lg:text-4xl">Halaman bevy Kami</h2>
         <Link
           className="mt-2 text-coreBlue-primary font-bold text-lg lg:text-2xl hover:underline hover:text-coreBlue-500"
           href="https://gdsc.community.dev/universitas-negeri-malang/"
