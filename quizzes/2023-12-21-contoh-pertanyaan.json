@@ -1,0 +1,94 @@
+{
+  "metadata": {
+    "uuid": "b9d049de-b470-409e-82bd-fa0b6f253bfb",
+    "title": "Contoh Quiz Dasar",
+    "author": "Fahli Saputra",
+    "description": "Deskripsi Singkat Kuis >150 karakter",
+    "thumbnail": "https://drive.google.com/uc?id=10eaAzCnE6tQY3cC_4zuWslHuVoZCtoXs",
+    "date": "2021-09-30",
+    "tags": ["contoh", "tags", "kuis"]
+  },
+  "questions": [
+    {
+      "uuid": "b987a3b2-eed9-4c5a-82da-424e4ee789ce",
+      "question": "(Pertanyaan Pertama) Ibukota Indonesia adalah?",
+      "image": "https://drive.google.com/uc?id=10eaAzCnE6tQY3cC_4zuWslHuVoZCtoXs",
+      "options": [
+        {
+          "answer": "Jakarta (benar)",
+          "image": "https://drive.google.com/uc?id=10eaAzCnE6tQY3cC_4zuWslHuVoZCtoXs",
+          "isCorrect": true
+        },
+        {
+          "answer": "Surabaya (Salah)",
+          "image": "https://drive.google.com/uc?id=10eaAzCnE6tQY3cC_4zuWslHuVoZCtoXs",
+          "isCorrect": false
+        },
+        {
+          "answer": "Medan (Salah)",
+          "image": "https://drive.google.com/uc?id=10eaAzCnE6tQY3cC_4zuWslHuVoZCtoXs",
+          "isCorrect": false
+        },
+        {
+          "answer": "Malang (Salah)",
+          "image": "https://drive.google.com/uc?id=10eaAzCnE6tQY3cC_4zuWslHuVoZCtoXs",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "uuid": "b9e7a3b2-eed9-4c5a-82da-424e4a2789ce",
+      "question": "(Pertanyaan Pertama) Ibukota Indonesia adalah?",
+      "image": "https://drive.google.com/uc?id=10eaAzCnE6tQY3cC_4zuWslHuVoZCtoXs",
+      "options": [
+        {
+          "answer": "Jakarta (benar)",
+          "image": "https://drive.google.com/uc?id=10eaAzCnE6tQY3cC_4zuWslHuVoZCtoXs",
+          "isCorrect": true
+        },
+        {
+          "answer": "Surabaya (Salah)",
+          "image": "https://drive.google.com/uc?id=10eaAzCnE6tQY3cC_4zuWslHuVoZCtoXs",
+          "isCorrect": false
+        },
+        {
+          "answer": "Medan (Salah)",
+          "image": "https://drive.google.com/uc?id=10eaAzCnE6tQY3cC_4zuWslHuVoZCtoXs",
+          "isCorrect": false
+        },
+        {
+          "answer": "Malang (Salah)",
+          "image": "https://drive.google.com/uc?id=10eaAzCnE6tQY3cC_4zuWslHuVoZCtoXs",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "uuid": "b987a3b2-ead9-4c5a-82da-424e4a2789ce",
+      "question": "(Pertanyaan Ketiga) Universitas Negeri Malang terletak di kota?",
+      "image": "https://drive.google.com/uc?id=10eaAzCnE6tQY3cC_4zuWslHuVoZCtoXs",
+      "options": [
+        {
+          "answer": "Kediri (salah)",
+          "image": "https://drive.google.com/uc?id=10eaAzCnE6tQY3cC_4zuWslHuVoZCtoXs",
+          "isCorrect": false
+        },
+        {
+          "answer": "Padang (Salah)",
+          "image": "https://drive.google.com/uc?id=10eaAzCnE6tQY3cC_4zuWslHuVoZCtoXs",
+          "isCorrect": false
+        },
+        {
+          "answer": "Palembang (Salah)",
+          "image": "https://drive.google.com/uc?id=10eaAzCnE6tQY3cC_4zuWslHuVoZCtoXs",
+          "isCorrect": false
+        },
+        {
+          "answer": "Malang (Benar)",
+          "image": "https://drive.google.com/uc?id=10eaAzCnE6tQY3cC_4zuWslHuVoZCtoXs",
+          "isCorrect": true
+        }
+      ]
+    }
+  ]
+}

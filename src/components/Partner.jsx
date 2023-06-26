@@ -30,13 +30,13 @@ export default function Partner() {
   return (
     <div className="w-full bg-white">
       <div className="mx-auto container py-32 flex flex-col gap-8 justify-center items-center text-center px-5 lg:px-0">
-        <h1 className="text-3xl lg:text-6xl font-bold text-coreBlue-primary">
+        <h2 className="text-3xl lg:text-6xl font-bold text-coreBlue-primary">
           Partner Kami
-        </h1>
+        </h2>
         <div className="flex flex-col item-center justify-center">
-          <h2 className="text-2xl lg:text-4xl text-center font-semibold">
+          <h3 className="text-2xl lg:text-4xl text-center font-semibold">
             Partner Perusahaan
-          </h2>
+          </h3>
           <div className="flex flex-wrap lg:flex-row flex-col items-center justify-center gap-3 mt-8">
             {/* looping more card for coreteam */}
             {industryPartners.map((partner) => (
@@ -56,18 +56,18 @@ export default function Partner() {
                       height={180}
                     />
                   </div>
-                  <h2 className="text-xl lg:text-3xl py-4 font-semibold">
+                  <p className="text-xl lg:text-3xl py-4 font-semibold">
                     {partner.name}
-                  </h2>
+                  </p>
                 </div>
               </Link>
             ))}
           </div>
         </div>
         <div className="flex flex-col item-center justify-center">
-          <h2 className="text-2xl lg:text-4xl text-center font-semibold">
+          <h3 className="text-2xl lg:text-4xl text-center font-semibold">
             Partner Komunitas
-          </h2>
+          </h3>
           <div className="flex lg:flex-row flex-col items-center justify-center gap-3 mt-8">
             {/* looping more card for coreteam */}
             {communityPartners.map((partner) => (
@@ -87,9 +87,9 @@ export default function Partner() {
                       height={180}
                     />
                   </div>
-                  <h2 className="text-xl lg:text-3xl py-4 font-semibold">
+                  <p className="text-xl lg:text-3xl py-4 font-semibold">
                     {partner.name}
-                  </h2>
+                  </p>
                 </div>
               </Link>
             ))}
