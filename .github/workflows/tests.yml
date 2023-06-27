@@ -2,18 +2,17 @@ name: Unit Test & End to End
 on: push
 
 jobs:
-  install_dependencies:
+  testing:
     runs-on: ubuntu-latest
     strategy:
       matrix:
         node: [ 18, 20 ]
-    
-    name: Node ${{ matrix.node }} Setup
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
       
-      - name: Setup Node
+      - name: Setup Node ${{matrix.node}}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
