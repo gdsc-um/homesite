@@ -1,0 +1,28 @@
+name: Lighthouse Productions Assert
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  push:
+    branches:
+      - main
+
+jobs:
+  lhci_prod:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install LHCI CLI
+        run: npm install -g @lhci/cli@0.12.x
+      - name: Run Lighthouse CI
+        run: lhci collect --config=./.github/lighthouserc-prod.json
+      - name: run Lighthouse CI assert
+        run: lhci assert --config=./.github/lighthouserc-prod.json
+      - name: Upload Lighthouse Report
+        run: lhci upload --config=./.github/lighthouserc-prod.json
+
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

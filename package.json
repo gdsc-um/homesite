@@ -12,7 +12,8 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "format:check": "prettier --check src/**/*.{js,jsx}",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "lhci:collect": "lhci collect --url http://gdsc-um.org"
   },
   "dependencies": {
     "autoprefixer": "10.4.14",
