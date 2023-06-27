@@ -30,6 +30,7 @@
     "uuid": "^9.0.0"
   },
   "devDependencies": {
+    "@lhci/cli": "^0.12.0",
     "@tailwindcss/typography": "^0.5.9",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
