@@ -1,5 +1,6 @@
 import ArticleCard from "@/components/ArticleCard";
 import fs from "fs";
+import Head from "next/head";
 
 export async function getStaticProps() {
   const files = fs.readdirSync("quizzes");
@@ -24,6 +25,13 @@ export async function getStaticProps() {
 export default function Quiz({ quizzes }) {
   return (
     <div className="w-full min-h-screen bg-white">
+      <Head>
+        <title>Daftar Quiz | GDSC Universitas Negeri Malang</title>
+        <meta
+          name="description"
+          content="Daftar quiz yang disediakan oleh GDSC UM"
+        />
+      </Head>
       <div className="mx-auto container py-32 flex flex-col gap-8 justify-center items-center">
         <h1 className="text-center text-3xl lg:text-6xl font-bold text-black">
           Quiz & Latihan

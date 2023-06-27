@@ -40,21 +40,21 @@ export default function Artikel({ frontmatter, content }) {
       <article className="container mx-auto prose-full prose-lg text-black mb-20">
         {/* check if frontmatter available, if some random image */}
         {!frontmatter.thumbnail ? (
-          <div className="overflow-hidden px-5">
+          <div className="overflow-hidden mx-auto container px-5 relative w-full md:w-[50%]">
             <Image
               src={IMAGEPLACEHOLDER}
               alt=""
-              className="w-full lg:h-[720px] h-80 object-cover rounded-lg"
+              className="w-full lg:h-[500px] h-80 object-cover rounded-lg"
               width={1280}
               height={720}
             />
           </div>
         ) : (
-          <div className="overflow-hidden px-5">
+          <div className="overflow-hidden mx-auto container px-5 relative w-full">
             <Image
               src={frontmatter.thumbnail}
               alt=""
-              className="w-full lg:h-[720px] h-80 object-cover rounded-lg"
+              className="w-full h-40 md:h-80 object-cover rounded-lg"
               width={1280}
               height={720}
             />
