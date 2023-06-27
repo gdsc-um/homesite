@@ -23,13 +23,16 @@ jobs:
         run: npm install --frozen-lockfile
 
       - name: Upgrade to CANARY version
-        run: npm install --no-save next@canary
+        run: npm install next@canary
 
       - name: Run tests on NODE ${{matrix.node}} in NEXT canary
         run: npm test
 
       - name: Run build on NODE ${{matrix.node}} in NEXT canary
         run: npm run build
+
+      - name: Print package versions
+        run: npm list --depth=0
 
   latest:
     runs-on: ubuntu-latest
@@ -52,10 +55,13 @@ jobs:
         run: npm install --frozen-lockfile
 
       - name: Upgrade to LATEST version
-        run: npm install --no-save next@latest react@latest react-dom@latest eslint-config-next@latest
+        run: npm install next@latest react@latest react-dom@latest eslint-config-next@latest
 
       - name: Run tests on NODE ${{matrix.node}} in NEXT latest
         run: npm test
 
       - name: Run build on NODE ${{matrix.node}} in NEXT latest
         run: npm run build
+
+      - name: Print package versions
+        run: npm list --depth=0
