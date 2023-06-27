@@ -2,14 +2,13 @@ name: Upgrade Compability Check
 on: push
 
 jobs:
-  upgrade-matrix:
+  canary:
     runs-on: ubuntu-latest
     strategy:
       matrix:
         node: [18, 20]
-        next: [canary, latest]
 
-    name: Upgrade to NODE ${{matrix.node}} NEXT ${{matrix.next}}
+    name: Upgrade to NODE ${{matrix.node}} in NEXT canary
 
     steps:
       - name: Checkout code
@@ -20,19 +19,43 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
 
-      - name: Install dependencies on NODE ${{matrix.node}} in NEXT ${{matrix.next}}
+      - name: Install dependencies on NODE ${{matrix.node}} in NEXT canary
         run: npm install --frozen-lockfile
 
       - name: Upgrade to CANARY version
-        if: ${{matrix.next}} == 'canary'
         run: npm install --no-save next@canary
 
-      - name: Upgrade to LATEST version
-        if: ${{matrix.next}} == 'latest'
-        run: npm install --no-save next@latest react@latest react-dom@latest eslint-config-next@latest
-
-      - name: Run tests on NODE ${{matrix.node}} in NEXT ${{matrix.next}}
+      - name: Run tests on NODE ${{matrix.node}} in NEXT canary
         run: npm test
 
-      - name: Run build on NODE ${{matrix.node}} in NEXT ${{matrix.next}}
+      - name: Run build on NODE ${{matrix.node}} in NEXT canary
+        run: npm run build
+
+  latest:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [18, 20]
+
+    name: Upgrade to NODE ${{matrix.node}} in NEXT latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node ${{matrix.node}}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: Install dependencies on NODE ${{matrix.node}} in NEXT latest
+        run: npm install --frozen-lockfile
+
+      - name: Upgrade to LATEST version
+        run: npm install --no-save next@latest react@latest react-dom@latest eslint-config-next@latest
+
+      - name: Run tests on NODE ${{matrix.node}} in NEXT latest
+        run: npm test
+
+      - name: Run build on NODE ${{matrix.node}} in NEXT latest
         run: npm run build
