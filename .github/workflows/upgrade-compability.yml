@@ -19,13 +19,12 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
-          cache: "npm"
-
-      - name: Install ${{matrix.next}} version
-        run: npm install next@${{matrix.next}} react@${{matrix.next}} react-dom@${{matrix.next}} eslint-config-next@${{matrix.next}}
 
       - name: Install dependencies on NODE ${{matrix.node}} in NEXT ${{matrix.next}}
-        run: npm install
+        run: npm install --frozen-lockfile
+
+      - name: Upgrade ${{matrix.next}} version
+        run: npm install next@${{matrix.next}} react@${{matrix.next}} react-dom@${{matrix.next}} eslint-config-next@${{matrix.next}}
 
       - name: Run tests on NODE ${{matrix.node}} in NEXT ${{matrix.next}}
         run: npm test
