@@ -2,14 +2,14 @@ name: Upgrade Compability Check
 on: push
 
 jobs:
-  testing:
+  upgrade-matrix:
     runs-on: ubuntu-latest
     strategy:
       matrix:
         node: [18, 20]
         next: [canary, latest]
 
-    name: Node ${{matrix.node}} Unit Test & End to End
+    name: Upgrade to NODE ${{matrix.node}} NEXT ${{matrix.next}}
 
     steps:
       - name: Checkout code
