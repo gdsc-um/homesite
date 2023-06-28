@@ -1,3 +1,4 @@
+import Head from "next/head";
 import ImageNotFound from "@/assets/404.svg";
 import Image from "next/image";
 import Link from "next/link";
@@ -5,6 +6,10 @@ import Link from "next/link";
 export default function NotFound() {
   return (
     <div className="w-full py-24 flex flex-col justify-center items-center px-5 bg-white space-y-4">
+      <Head>
+        <title>Halaman tidak tersedia | GDSC Universitas Negeri Malang</title>
+        <meta name="description" content="Halaman tidak tersedia" />
+      </Head>
       <Image src={ImageNotFound} alt="Maitenance" className="" />
       <p className="text-center text-5xl font-semibold text-coreBlue-primary">
         Oops.. Halaman tidak ada.
