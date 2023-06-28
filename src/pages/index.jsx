@@ -35,8 +35,10 @@ export default function Home({ posts }) {
     <div className="w-full min-h-screen bg-white">
       <Head>
         <title>Beranda | GDSC Universitas Negeri Malang</title>
-        <meta name="description" content="Official Page of Google Developer Student Clubs Universitas Negeri Malang" />
-        <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="description"
+          content="Official Page of Google Developer Student Clubs Universitas Negeri Malang"
+        />
       </Head>
       {/* Hero */}
       <div className="w-full h-[75vh] flex flex-col justify-center items-center bg-[#E8F5E9] gap-3">
@@ -110,9 +112,7 @@ export default function Home({ posts }) {
             </div>
             <div className="w-full bg-[#EB4A3D] rounded-xl p-5 flex flex-col items-center justify-center gap-3">
               <Image alt="web-dev" src={mobiledev} width={134} height={134} />
-              <p className="text-black font-bold text-xl">
-                Mobile Development
-              </p>
+              <p className="text-black font-bold text-xl">Mobile Development</p>
               <div className="flex gap-1 items-center">
                 <div className="bg-[#E3F2FD] text-[#498AF4] font-normal rounded-full text-xs px-3 py-1">
                   Android

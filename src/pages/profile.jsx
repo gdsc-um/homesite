@@ -13,7 +13,6 @@ export default function Profile() {
           name="description"
           content="Gambaran singkat struktur dan kerjasama GDSC UM"
         />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="w-full py-28 flex flex-col justify-center items-center bg-[#E8F5E9] gap-3">
         <h1 className="text-coreBlue-primary font-bold text-center text-3xl lg:text-6xl">

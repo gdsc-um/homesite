@@ -23,7 +23,6 @@ export default function Team({ profiles }) {
           name="description"
           content="Core Team GDSC Universitas Negeri Malang"
         />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="mx-auto container py-32 flex flex-col gap-8 justify-center items-center">
         <h1 className="text-3xl lg:text-6xl text-center font-bold text-coreBlue-primary">
