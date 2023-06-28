@@ -1,25 +1,28 @@
-name: Test
-
+name: Unit Test & End to End
 on: push
 
 jobs:
-  build:
+  testing:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [ 18, 20 ]
+
+    name: Node ${{matrix.node}} Unit Test & End to End
+
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
-      
-      - name: Setup Node
+        uses: actions/checkout@v3
+
+      - name: Setup Node ${{matrix.node}}
         uses: actions/setup-node@v3
         with:
-          node-version: 18
-          
-      - name: Run NPM Install
-        run: npm install
-      
-      - name: Run Build
-        run: npm run build --if-present
-      
-      - name: Run Test
+          node-version: ${{ matrix.node }}
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Run Jest Unit Testing
         run: npm test
-      
+

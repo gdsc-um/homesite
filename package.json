@@ -12,7 +12,8 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "format:check": "prettier --check src/**/*.{js,jsx}",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "lhci:collect": "lhci collect --url http://gdsc-um.org"
   },
   "dependencies": {
     "autoprefixer": "10.4.14",
@@ -30,6 +31,7 @@
     "uuid": "^9.0.0"
   },
   "devDependencies": {
+    "@lhci/cli": "^0.12.0",
     "@tailwindcss/typography": "^0.5.9",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
