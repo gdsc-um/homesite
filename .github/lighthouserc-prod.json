@@ -1,6 +1,7 @@
 {
   "ci": {
     "collect": {
+      "url": ["https://gdsc-um.org", "https://gdsc-um.vercel.app"],
       "numberOfRuns": 3,
       "settings": {
         "preset": "desktop"
