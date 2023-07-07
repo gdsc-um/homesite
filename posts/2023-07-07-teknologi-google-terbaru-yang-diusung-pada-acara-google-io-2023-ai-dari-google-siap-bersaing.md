@@ -1,10 +1,11 @@
 ---
 title: "Teknologi google terbaru yang diusung pada acara Google I/O 2023, AI dari Google siap bersaing."
 date: "2023-07-07"
-excerpt: "Google menggelar Keynote Google I/O 2023 yang dilaksanakan pada hari Rabu tanggal 10 Mei 2023. Bagi yang belum mengenal Google I/O, Google I/O merupakan acara tahunan yang diselenggarakan oleh Google. Tujuan dari acara tersebut yaitu untuk menyampaikan teknologi terbaru, perkembangan terkini dan inovasi yang dikembangkan oleh Google."
+excerpt: "Google menggelar Keynote Google I/O 2023 yang dilaksanakan pada hari Rabu tanggal 10 Mei 2023."
 tags: ["kabar teknologi"]
 thumbnail: "https://drive.google.com/uc?id=1T05jIHZIOi6ARJlIUBaz2XpevEi7gpnQ"
 ---
+
 ![Cover Gambar](https://drive.google.com/uc?id=1T05jIHZIOi6ARJlIUBaz2XpevEi7gpnQ)
 
 Malang, GDSC UM – Google menggelar **Keynote Google I/O 2023** yang dilaksanakan pada hari Rabu tanggal 10 Mei 2023. Bagi yang belum mengenal Google I/O, Google I/O merupakan acara tahunan yang diselenggarakan oleh Google. Tujuan dari acara tersebut yaitu untuk menyampaikan teknologi terbaru, perkembangan terkini dan inovasi yang dikembangkan oleh Google. Acara ini menjadi media yang sangat penting bagi para pengembang, desainer, dan komunitas yang bergerak di bidang teknologi untuk mendapatkan pengetahuan mendalam terkait produk dan layanan Google.
@@ -17,13 +18,13 @@ Google mengumumkan tiga Gadget terbaru mereka yakni **Pixel 7A, Pixel Tablet, da
 
 Selain itu ia juga akan meluncurkan **Pixel Tablet** yang berukuran 258 x 169 x 8.1mm dan berat 493 gram. Tablet ini memiliki Charging Speaker Dock, layar 10,95 inci, RAM 8GB, penyimpanan 128 / 256GB dan memiliki kamera 8MP di sisi belakang serta depan. Sama seperti Pixel 7A, Tablet ini juga dibandrol dengan harga US$499 atau setara dengan Rp 7,4 Jutaan.
 
-Selanjutnya yang sangat menarik yaitu **Pixel Fold**. Yaitu ponsel lipat baru Google, yang dapat berubah menjadi tablet kecil. Hal ini membuktikan bahwa google ikut dalam persaingan gadget lipat yang saat ini sedang panas. Harganya $1799 atau setara dengan Rp 26,5 jutaan. Ponsel lipat ini memiliki layar luar OLED berukuran 5,8 inci saat ditutup dan layar dalam OLED fleksibel yang terbuka hingga 7,6 layar inci. Terdapat RAM 12GB, penyimpanan 256 atau 512GB, prosesor Tensor 2, dan baterai 4.800mAh yang terbagi antara dua sel. 
+Selanjutnya yang sangat menarik yaitu **Pixel Fold**. Yaitu ponsel lipat baru Google, yang dapat berubah menjadi tablet kecil. Hal ini membuktikan bahwa google ikut dalam persaingan gadget lipat yang saat ini sedang panas. Harganya $1799 atau setara dengan Rp 26,5 jutaan. Ponsel lipat ini memiliki layar luar OLED berukuran 5,8 inci saat ditutup dan layar dalam OLED fleksibel yang terbuka hingga 7,6 layar inci. Terdapat RAM 12GB, penyimpanan 256 atau 512GB, prosesor Tensor 2, dan baterai 4.800mAh yang terbagi antara dua sel.
 
 ### 2. Android 14
 
 Salah satu hal yang disorot pada acara Google I/O 2023 adalah pengumuman terkait pembaharuan dalam sistem operasi android. Google menghadirkan fitur-fitur baru yang berguna dan dapat meningkatkan kinerja, keamanan, dan pengalaman pengguna.
 
-Beberapa pembaharuan yang terjadi yaitu gadget yang nampak lebih cantik dan mampu mengekspresikan diri penggunanya. Seperti personalisasi warna jam pada _lock screen_. Sekaligus kemudahan mengakses aplikasi dalam layar terkunci. Android juga memiliki beberapa pilihan _wallpaper_ baru, termasuk _wallpaper emoji_ dan sinematik. Terdapat pula fitur _Find My Phone_ yang bisa melacak keberadaan perangkat anda. 
+Beberapa pembaharuan yang terjadi yaitu gadget yang nampak lebih cantik dan mampu mengekspresikan diri penggunanya. Seperti personalisasi warna jam pada _lock screen_. Sekaligus kemudahan mengakses aplikasi dalam layar terkunci. Android juga memiliki beberapa pilihan _wallpaper_ baru, termasuk _wallpaper emoji_ dan sinematik. Terdapat pula fitur _Find My Phone_ yang bisa melacak keberadaan perangkat anda.
 
 ### 3. AI (Artificial Intelligence)
 
