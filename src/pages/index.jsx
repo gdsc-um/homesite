@@ -57,7 +57,7 @@ export default function Home({ posts }) {
               Tentang Kami
             </div>
           </Link>
-          <Link href={"/blog"}>
+          <Link href={"/"}>
             <div className="bg-[#498AF4] px-5 py-2 rounded-xl text-[#E8F5E9] font-bold text-sm lg:text-lg">
               Mulai Jelajahi
             </div>
