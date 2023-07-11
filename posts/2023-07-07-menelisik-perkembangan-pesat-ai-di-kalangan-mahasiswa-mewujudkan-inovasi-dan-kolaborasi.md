@@ -3,10 +3,10 @@ title: "Menelisik perkembangan pesat AI di kalangan mahasiswa: Mewujudkan Inovas
 date: "2023-07-07"
 excerpt: "Teknologi Artificial Intelligence (AI) telah mengalami perkembangan pesat dalam beberapa tahun terakhir, dan dampaknya terasa di berbagai sektor kehidupan."
 tags: ["kabar teknologi"]
-thumbnail: "https://drive.google.com/uc?id=1Z8hgnmZ9EHq8avECzuse4FD8GoxhWovI"
+thumbnail: "https://drive.google.com/uc?id=1dacmn0OIV0ShtvtCHabVBwhMOEYLkWIx"
 ---
 
-![Cover Gambar](https://drive.google.com/uc?id=1Z8hgnmZ9EHq8avECzuse4FD8GoxhWovI)
+![Cover Gambar](https://drive.google.com/uc?id=1dacmn0OIV0ShtvtCHabVBwhMOEYLkWIx)
 
 Malang, GDSC UM – Teknologi Artificial Intelligence (AI) telah mengalami perkembangan pesat dalam beberapa tahun terakhir, dan dampaknya terasa di berbagai sektor kehidupan. Tidak hanya para profesional, tetapi juga kalangan mahasiswa turut tertarik untuk mempelajari dan menerapkan AI dalam pemecahan masalah dan inovasi. Dalam artikel ini, kita akan menelisik perkembangan pesat AI di kalangan mahasiswa, melihat apa yang mendorong minat mereka, peran penting Google Developer Students Club (GDSC) Universitas Negeri Malang (UM) dalam memfasilitasi pengembangan AI, serta dampak positif yang dihasilkan.
 
