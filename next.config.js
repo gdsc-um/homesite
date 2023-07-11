@@ -5,6 +5,7 @@ const { headers } = require("next/dist/client/components/headers");
 const nextConfig = {
   reactStrictMode: true,
   images: {
+    unoptimized: true,
     domains: [
       "localhost",
       "res.cloudinary.com",
