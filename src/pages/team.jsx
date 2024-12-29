@@ -32,7 +32,7 @@ export default function Team({ profiles }) {
           {/* looping more card for coreteam */}
           {profiles.map((coreteam) => (
             // looping card with length of coreteam
-            <CardName frontmatter={coreteam} key={coreteam.uuid} />
+            <CardName frontmatter={coreteam} key={coreteam.nim} />
           ))}
         </div>
       </div>
