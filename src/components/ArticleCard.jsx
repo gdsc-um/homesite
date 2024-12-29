@@ -33,7 +33,7 @@ export default function ArticleCard({ slug, frontmatter }) {
               src={frontmatter.thumbnail}
               alt=""
               className="w-full h-60 object-cover rounded-lg"
-              width={1280}
+              width={100}
               height={720}
             />
           ) : (
@@ -41,7 +41,7 @@ export default function ArticleCard({ slug, frontmatter }) {
               src={IMAGEPLACEHOLDER}
               alt=""
               className="w-full h-60 object-cover rounded-lg"
-              width={1280}
+              width={1000}
               height={720}
             />
           )}

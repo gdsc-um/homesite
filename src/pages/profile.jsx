@@ -19,7 +19,7 @@ export default function Profile() {
           Tentang GDSC Universitas Negeri Malang
         </h1>
         <p className="text-[#4D4D4D] font-normal text-lg lg:text-2xl px-5 lg:px-32 mt-4 lg:text-justify text-center">
-          Google Developer Student Clubs (GDSC) adalah komunitas pengembang
+        Google Developer Grub on Campus (GDGoC) adalah komunitas pengembang
           berbasis universitas yang diinisiasi oleh Google. Komunitas ini
           menyediakan lingkungan belajar sesama rekan bagi mahasiswa yang
           tertarik dengan teknologi, mahasiswa dari jurusan apa pun dipersilakan
